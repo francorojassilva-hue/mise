@@ -29,8 +29,9 @@ export function ThemeProvider({ children }: { children: ReactNode }) {
   const value: Ctx = {
     letter: state.letter,
     mode: state.mode,
-    setLetter: (letter) => setState((s) => ({ ...s, letter })),
-    setMode: (mode) => setState((s) => ({ ...s, mode })),
+    // devolver o mesmo objeto quando nada muda evita re-render em cadeia
+    setLetter: (letter) => setState((s) => (s.letter === letter ? s : { ...s, letter })),
+    setMode: (mode) => setState((s) => (s.mode === mode ? s : { ...s, mode })),
   };
   return <ThemeCtx.Provider value={value}>{children}</ThemeCtx.Provider>;
 }

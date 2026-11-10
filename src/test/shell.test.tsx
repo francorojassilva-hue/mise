@@ -1,6 +1,7 @@
 import { fireEvent, render, screen } from "@testing-library/react";
-import { beforeAll, describe, expect, it } from "vitest";
+import { beforeAll, beforeEach, describe, expect, it } from "vitest";
 import { App } from "@/App";
+import { reiniciarSemana } from "@/lib/semana";
 import { ThemeProvider } from "@/lib/theme";
 
 beforeAll(() => {
@@ -20,6 +21,8 @@ beforeAll(() => {
     disconnect() {}
   } as unknown as typeof ResizeObserver;
 });
+
+beforeEach(() => reiniciarSemana("A"));
 
 const montar = () =>
   render(

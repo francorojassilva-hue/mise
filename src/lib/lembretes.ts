@@ -9,6 +9,8 @@ export type Lembrete = { id: string; tipo: Tipo; at: Date; texto: string };
 
 const DIA_JS: Record<Dieta["cozinha"]["diaPreparo"], number> = { domingo: 0, segunda: 1, terca: 2, quarta: 3, quinta: 4, sexta: 5, sabado: 6 };
 const FREEZER = /freezer|geladeira|descongel/i;
+/** O lembrete de tirar do freezer só interessa quando amanhã tem refeição congelada. */
+export const ehAvisoFreezer = (texto: string) => FREEZER.test(texto);
 const seg0 = (dt: Date) => (dt.getDay() + 6) % 7;
 
 /** Refeições de amanhã que saem do freezer (para o aviso da noite e o bloco da tela Hoje). */

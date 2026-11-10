@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
 import { CalendarDays, ChefHat, Settings, ShoppingBasket, type LucideIcon } from "lucide-react";
 import { MiseButton } from "./MiseButton";
-import { useTheme } from "@/lib/theme";
+import { setLetra, useSemana } from "@/lib/semana";
 import type { Letra } from "@/lib/appearance";
 import { cn } from "@/lib/utils";
 
@@ -26,21 +26,16 @@ export function AreaIcon({ id, className = "size-12" }: { id: AreaId; className?
 
 const LETRAS: Letra[] = ["A", "B", "C"];
 
-/** Corpo provisório: as telas de verdade chegam na F3 e na F4. */
+/** Corpo provisório: Semana, Mercado e Preparo chegam nos próximos commits da F3; Ajustes na F4. */
 function Corpo({ id }: { id: AreaId }) {
-  const { letter, setLetter } = useTheme();
+  const { letra } = useSemana();
   if (id === "semana") {
     return (
       <div className="space-y-3">
         <p className="text-sm font-bold">Letra da semana</p>
         <div className="grid grid-cols-3 gap-2">
           {LETRAS.map((l) => (
-            <MiseButton
-              key={l}
-              onClick={() => setLetter(l)}
-              aria-pressed={l === letter}
-              className={cn("min-h-14 rounded-2xl text-xl font-black", l === letter ? "btn-vivid" : "glass-strong")}
-            >
+            <MiseButton key={l} onClick={() => setLetra(l)} aria-pressed={l === letra} className={cn("min-h-14 rounded-2xl text-xl font-black", l === letra ? "btn-vivid" : "glass-strong")}>
               {l}
             </MiseButton>
           ))}
@@ -51,7 +46,7 @@ function Corpo({ id }: { id: AreaId }) {
   return <div className="glass grid h-40 place-items-center p-5 text-center font-semibold text-muted-foreground">Em construção</div>;
 }
 
-export function AreaPanel({ id }: { id: AreaId }) {
+export function AreaPanel({ id }: { id: AreaId; open?: (a: AreaId | null) => void }) {
   const area = AREAS[id];
   return (
     <div className="space-y-5">
