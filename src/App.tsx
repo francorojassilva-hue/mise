@@ -10,6 +10,7 @@ import { Drawer, DrawerContent, DrawerDescription, DrawerTitle } from "@/compone
 import { carregarCuriosidades } from "@/lib/curiosidades";
 import { carregarDieta } from "@/lib/dietaAtual";
 import { carregarPrecos } from "@/lib/precos";
+import { carregarTempos } from "@/lib/tempos";
 import { carregarSemana, useSemana, verificarVirada } from "@/lib/semana";
 import { useTheme } from "@/lib/theme";
 
@@ -27,6 +28,7 @@ export function App() {
     void carregarSemana();
     void carregarCuriosidades();
     void carregarPrecos();
+    void carregarTempos();
     const aoVoltar = () => document.visibilityState === "visible" && verificarVirada();
     document.addEventListener("visibilitychange", aoVoltar);
     return () => document.removeEventListener("visibilitychange", aoVoltar);

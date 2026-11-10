@@ -121,7 +121,9 @@ describe("quantidades nas receitas", () => {
     expect(preencher(D, "{frango:cru}", "A")).toBe("1,5 kg de frango desfiado (cozido)");
     expect(preencher(D, "{banana@lanche:cru}", "A")).toBe("1,1 kg de banana nanica");
     expect(preencher(D, "{porcoes} potes", "A", { ...porcoesPadrao(D), almoco: 8.6 }, { ref: "almoco" })).toBe("9 potes");
-    expect(preencher(D, "{jilo} e {couve}", "C")).toBe("sem dado e sem dado");
+    // id desconhecido = "sem dado"; alimento que existe mas não entra nesta letra = só o nome, sem quantidade
+    expect(preencher(D, "{jilo} e {naoexiste}", "C")).toBe("sem dado e sem dado");
+    expect(preencher(D, "{couve}", "C")).toBe("couve-manteiga fatiada");
   });
   it("passo do dia a dia mostra uma porção, nunca a semana", () => {
     const d2 = structuredClone(D);

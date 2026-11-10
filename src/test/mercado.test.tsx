@@ -15,7 +15,7 @@ beforeAll(() => {
 beforeEach(async () => {
   await voltarAoExemplo();
   await reiniciarSemana("A");
-  reiniciarPrecos();
+  await reiniciarPrecos();
 });
 
 const abrirMercado = async () => {

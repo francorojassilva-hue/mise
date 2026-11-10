@@ -3,7 +3,7 @@
  * Sobrescreve o preço da dieta na lista do Mercado. Guardado no aparelho (chave "precos").
  */
 import { useSyncExternalStore } from "react";
-import { getItem, setItem } from "./store";
+import { getItem, removeItem, setItem } from "./store";
 
 const CHAVE = "precos";
 export type Precos = Record<string, number>;
@@ -39,4 +39,7 @@ export async function salvarPrecos(p: Precos) {
   trocar(limpo);
 }
 /** Só para testes. */
-export const reiniciarPrecos = () => trocar({});
+export async function reiniciarPrecos() {
+  await removeItem(CHAVE);
+  trocar({});
+}

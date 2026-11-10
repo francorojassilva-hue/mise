@@ -12,13 +12,16 @@ export function passosParaPrompt(passos: PassoPlano[], blocos: Bloco[], instruca
   }));
 }
 
-const EQUIP: Record<string, string> = { fogao: "fogão", forno: "forno", microondas: "micro-ondas", airfryer: "airfryer", panela_pressao: "panela de pressão", panela_pressao_eletrica: "panela de pressão elétrica", liquidificador: "liquidificador", mixer: "mixer", sanduicheira: "sanduicheira" };
+export const EQUIP: Record<string, string> = { fogao: "fogão", forno: "forno", microondas: "micro-ondas", airfryer: "airfryer", panela_pressao: "panela de pressão", panela_pressao_eletrica: "panela de pressão elétrica", liquidificador: "liquidificador", mixer: "mixer", sanduicheira: "sanduicheira" };
 const HABILIDADE = { iniciante: "Sou iniciante na cozinha: explique sem pressa e sem termo técnico.", basico: "Sei o básico de cozinha.", avancado: "Cozinho bem: pode ir direto ao ponto." } as const;
+
+/** Nome de um equipamento da cozinha, como aparece nos chips e no prompt. */
+export const nomeEquipamento = (c: Dieta["cozinha"], e: string) => (e === "fogao" ? `fogão de ${c.bocas} bocas` : EQUIP[e] ?? e.replace(/_/g, " "));
 
 /** Uma frase sobre a cozinha da pessoa, tirada da dieta. */
 export function cozinhaEmTexto(d: Dieta) {
   const c = d.cozinha;
-  const itens = c.equipamentos.map((e) => (e === "fogao" ? `fogão de ${c.bocas} bocas` : EQUIP[e] ?? e.replace(/_/g, " ")));
+  const itens = c.equipamentos.map((e) => nomeEquipamento(c, e));
   const tenho = itens.length ? `tenho ${itens.length > 1 ? `${itens.slice(0, -1).join(", ")} e ${itens.at(-1)}` : itens[0]}` : "tenho uma cozinha simples";
   return `Sobre mim e a cozinha: ${tenho}${c.equipamentos.includes("forno") ? "" : ", não uso forno"}. ${HABILIDADE[c.habilidade]} Divido as porções no olho, sem balança. Quero comida gostosa, não só correta.`;
 }

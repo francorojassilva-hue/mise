@@ -1,6 +1,7 @@
 import { motion } from "framer-motion";
 import { CalendarDays, ChefHat, Settings, ShoppingBasket, type LucideIcon } from "lucide-react";
 import { Mercado } from "./Mercado";
+import { Preparo } from "./Preparo";
 import { Semana } from "./Semana";
 import { cn } from "@/lib/utils";
 
@@ -23,10 +24,11 @@ export function AreaIcon({ id, className = "size-12" }: { id: AreaId; className?
   );
 }
 
-/** Corpo de cada aba. Mercado e Preparo chegam nos próximos commits da F3; Ajustes na F4. */
+/** Corpo de cada aba. Ajustes chega na F4. */
 function Corpo({ id, open }: { id: AreaId; open?: ((a: AreaId | null) => void) | undefined }) {
   if (id === "semana") return <Semana onMercado={() => open?.("mercado")} />;
   if (id === "mercado") return <Mercado />;
+  if (id === "cozinhar") return <Preparo />;
   return <div className="glass grid h-40 place-items-center p-5 text-center font-semibold text-muted-foreground">Em construção</div>;
 }
 

@@ -66,8 +66,10 @@ export function preencher(d: Dieta, txt: string, l: Letra, porc: Porcoes = porco
     const [, id, refM, cru] = m;
     const a = alimentoDe(d, id!);
     let g = o.porcao ? gramasPorcao(d, l, id!, refM ?? o.ref) || gramasPorcao(d, l, id!) : gramasSemana(d, l, id!, refM, porc);
-    if (!a || g === 0) return "sem dado";
+    if (!a) return "sem dado";
     const nome = a.nome.toLowerCase();
+    // alimento da dieta que não entra nesta letra (ex.: "batata (A e C) ou batata-doce (B)"): só o nome, sem quantidade
+    if (g === 0) return nome;
     if (cru) {
       g *= a.compra?.fator ?? 1;
       return `${g >= 1000 ? `${fmt(g / 1000)} kg` : `${Math.round(g)} g`} de ${nome}`;
