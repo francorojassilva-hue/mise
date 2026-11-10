@@ -202,15 +202,15 @@ function Cozinhar({ letra, onClose }: { letra: Letra; onClose: () => void }) {
         {!fim && <Trilhas compacto blocos={blocos} atual={i} agoraS={(agora - inicio.current) / 1000} onPick={ir} />}
 
         <div className="relative flex min-h-0 flex-1 flex-col items-center justify-center text-center">
-          <AnimatePresence mode="wait">
-            {fim ? (
-              <motion.div key="fim" initial={{ opacity: 0, scale: 0.8 }} animate={{ opacity: 1, scale: 1 }} className="relative space-y-3">
-                <Confetti count={36} />
-                <p className="text-3xl font-black">Tudo pronto!</p>
-                <p className="tnum text-xl text-muted-foreground">{Math.max(1, Math.round((agora - inicio.current) / 60000))} min</p>
-              </motion.div>
-            ) : (
-              p && (
+          {fim ? (
+            <motion.div key="fim" initial={{ opacity: 0, scale: 0.8 }} animate={{ opacity: 1, scale: 1 }} className="relative space-y-3">
+              <Confetti count={36} />
+              <p className="text-3xl font-black">Tudo pronto!</p>
+              <p className="tnum text-xl text-muted-foreground">{Math.max(1, Math.round((agora - inicio.current) / 60000))} min</p>
+            </motion.div>
+          ) : (
+            <AnimatePresence mode="wait" initial={false}>
+              {p && (
                 <motion.div key={i} initial={{ opacity: 0, x: 40 }} animate={{ opacity: 1, x: 0 }} exit={{ opacity: 0, x: -40 }} className="flex min-h-0 w-full flex-1 flex-col items-center gap-2">
                   <AcaoAnim a={acaoDoTexto(`${p.titulo} ${p.detalhe}`, p.acao)} className="size-20 shrink-0" />
                   <p className="shrink-0 text-xs font-bold uppercase text-muted-foreground">{p.tarefa}</p>
@@ -220,9 +220,9 @@ function Cozinhar({ letra, onClose }: { letra: Letra; onClose: () => void }) {
                     {instrucao(d, p, letra, porc)}
                   </p>
                 </motion.div>
-              )
-            )}
-          </AnimatePresence>
+              )}
+            </AnimatePresence>
+          )}
         </div>
 
         {!fim && curio && <CurioCard key={`${i}:${curio.id}`} c={curio} />}
