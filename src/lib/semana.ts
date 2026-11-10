@@ -120,7 +120,9 @@ export function verificarVirada() {
   const v = viradaDeSemana(estado);
   if (v !== estado) trocarEstado(v);
 }
-/** Só para testes. */
+/** Dieta nova: refeições e ids mudam, então trocas, removidas, registros e marcações da semana zeram (a letra fica). */
+export const zerarSemana = () => reiniciarSemana(estado.letra);
+/** Zera tudo; usado também pelos testes. */
 export async function reiniciarSemana(letra: Letra = "A") {
   estado = nova(letra);
   await removeItem(CHAVE);

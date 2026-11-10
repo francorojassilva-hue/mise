@@ -29,6 +29,8 @@ export async function salvarDieta(d: Dieta) {
   await setItem(CHAVE, d);
   trocar(d, false);
 }
+/** Edita a dieta em uso (nome da refeição, perfil...) e guarda no aparelho. */
+export const atualizarDieta = (editar: (d: Dieta) => Dieta) => salvarDieta(editar(estado.dieta));
 export async function voltarAoExemplo() {
   await removeItem(CHAVE);
   trocar(dietaExemplo, true);

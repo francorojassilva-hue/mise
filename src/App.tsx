@@ -7,6 +7,8 @@ import { AREAS, AreaPanel, type AreaId } from "@/components/mise/areas";
 import { Dock } from "@/components/mise/Dock";
 import { Hoje } from "@/components/mise/Hoje";
 import { Drawer, DrawerContent, DrawerDescription, DrawerTitle } from "@/components/ui/drawer";
+import { carregarAjustes } from "@/lib/ajustes";
+import { useAgendador } from "@/lib/agendador";
 import { carregarCuriosidades } from "@/lib/curiosidades";
 import { carregarDieta } from "@/lib/dietaAtual";
 import { carregarPrecos } from "@/lib/precos";
@@ -18,6 +20,7 @@ export function App() {
   const [area, setArea] = useState<AreaId | null>(null);
   const { letra } = useSemana();
   const { setLetter } = useTheme();
+  useAgendador();
 
   // a letra da semana manda no tema (cores do app)
   useEffect(() => setLetter(letra), [letra, setLetter]);
@@ -29,6 +32,7 @@ export function App() {
     void carregarCuriosidades();
     void carregarPrecos();
     void carregarTempos();
+    void carregarAjustes();
     const aoVoltar = () => document.visibilityState === "visible" && verificarVirada();
     document.addEventListener("visibilitychange", aoVoltar);
     return () => document.removeEventListener("visibilitychange", aoVoltar);

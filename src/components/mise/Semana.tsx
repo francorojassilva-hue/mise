@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { Check, ChevronDown, Repeat, ShoppingBasket, Undo2 } from "lucide-react";
 import { MiseButton } from "./MiseButton";
+import { Interruptor } from "./primitives";
 import { TrocaPicker } from "./Trocas";
 import { alimentoDe, type Letra } from "@/lib/dieta";
 import { useDieta } from "@/lib/dietaAtual";
@@ -14,14 +15,6 @@ import { cn } from "@/lib/utils";
 const LETRAS: Letra[] = ["A", "B", "C"];
 const COR = { A: "bg-letter-a", B: "bg-letter-b", C: "bg-letter-c" } as const;
 const reais = (n: number) => n.toLocaleString("pt-BR", { style: "currency", currency: "BRL" });
-
-function Interruptor({ ligado, onChange, rotulo }: { ligado: boolean; onChange: () => void; rotulo: string }) {
-  return (
-    <MiseButton role="switch" aria-checked={ligado} aria-label={rotulo} onClick={onChange} className={cn("relative h-8 w-14 shrink-0 rounded-full transition-colors", ligado ? "bg-primary" : "bg-muted")}>
-      <span className={cn("absolute top-1 size-6 rounded-full bg-white shadow transition-all", ligado ? "left-7" : "left-1")} />
-    </MiseButton>
-  );
-}
 
 export function Semana({ onMercado }: { onMercado: () => void }) {
   const { dieta: d } = useDieta();
