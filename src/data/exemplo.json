@@ -1,0 +1,3054 @@
+{
+ "formato": "mise-dieta",
+ "versao": 1,
+ "pessoa": {
+  "nome": "Daniel",
+  "sexo": "m",
+  "idade": 31,
+  "alturaCm": 175,
+  "pesoKg": 82,
+  "atividade": 1.55,
+  "objetivo": "recomposicao",
+  "seguranca": "ok",
+  "gostos": [
+   "ama ovos mexidos com requeijão ou mussarela",
+   "forte queda por doce",
+   "pão Nutrella é inegociável",
+   "não pesa comida: tudo em medida caseira",
+   "marmitas congeladas, descongela na véspera",
+   "refeições portáteis"
+  ],
+  "naoCome": [
+   "fígado",
+   "feijão"
+  ],
+  "doce": "todo_dia",
+  "alergias": [],
+  "restricoes": [
+   "sem chocolate à noite",
+   "não comer perto de dormir"
+  ],
+  "observacoes": ""
+ },
+ "habitos": {
+  "acordar": "06:45",
+  "dormir": "23:00",
+  "levaComida": true,
+  "foraDeCasa": [],
+  "treino": {
+   "faz": true,
+   "tipo": "musculação",
+   "dias": [
+    0,
+    1,
+    2,
+    3,
+    4
+   ],
+   "hora": "08:00"
+  }
+ },
+ "metas": {
+  "kcal": 2200,
+  "P": 160,
+  "C": 231,
+  "G": 75,
+  "fibras": 32
+ },
+ "refeicoes": [
+  {
+   "id": "pre",
+   "nome": "Pré-treino",
+   "hora": "07:00"
+  },
+  {
+   "id": "cafe",
+   "nome": "Café pós-treino",
+   "hora": "10:00"
+  },
+  {
+   "id": "almoco",
+   "nome": "Almoço",
+   "hora": "13:30"
+  },
+  {
+   "id": "jantar",
+   "nome": "Jantar",
+   "hora": "18:30"
+  },
+  {
+   "id": "lanche",
+   "nome": "Doce da noite",
+   "hora": "20:30"
+  }
+ ],
+ "rotina": [
+  {
+   "hora": "07:30",
+   "texto": "Intra: pré-treino meia dose em 400 ml de água + creatina 3–5 g",
+   "tipo": "suplemento"
+  },
+  {
+   "hora": "08:00",
+   "texto": "Treino (até ~09:15) + 500 ml de água",
+   "tipo": "treino"
+  },
+  {
+   "hora": "21:00",
+   "texto": "Passar as refeições de amanhã do freezer para a geladeira",
+   "tipo": "lembrete"
+  },
+  {
+   "hora": "23:00",
+   "texto": "Dormir",
+   "tipo": "sono"
+  }
+ ],
+ "suplementos": [
+  {
+   "nome": "Whey concentrado morango",
+   "dose": "conforme cardápio (dosador ≈ 20 g)",
+   "obs": "entra nas receitas"
+  },
+  {
+   "nome": "Creatina",
+   "dose": "3–5 g/dia",
+   "obs": "horário livre; junto do intra"
+  },
+  {
+   "nome": "Pré-treino",
+   "dose": "meia dose",
+   "obs": "cafeína: somar com o café; até 200 mg por vez e 400 mg/dia para adultos saudáveis (EFSA)"
+  },
+  {
+   "nome": "Ômega-3 (cápsula)",
+   "dose": "1 cápsula ~300 mg EPA+DHA",
+   "obs": "opcional; no C a sardinha já cobre"
+  },
+  {
+   "nome": "Multivitamínico",
+   "dose": "conforme rótulo",
+   "obs": "opcional: a comida cobre quase tudo, exceto vitamina D e E"
+  }
+ ],
+ "cozinha": {
+  "equipamentos": [
+   "fogao",
+   "microondas",
+   "airfryer",
+   "panela_pressao_eletrica",
+   "liquidificador",
+   "mixer"
+  ],
+  "bocas": 4,
+  "freezerMarmitas": 21,
+  "habilidade": "basico",
+  "diaPreparo": "domingo",
+  "tempoMaxMin": 120,
+  "congela": true,
+  "lanchesEmLote": true
+ },
+ "mercado": {
+  "orcamentoSemanal": 250,
+  "lojas": [
+   {
+    "id": "atacado",
+    "nome": "Atacado",
+    "uso": "carne, frango, ovos, laticínios, congelados e despensa"
+   },
+   {
+    "id": "hortifruti",
+    "nome": "Hortifrúti",
+    "uso": "frutas, legumes e reposição"
+   }
+  ]
+ },
+ "pessoaExtra": null,
+ "cardapios": {
+  "A": {
+   "nome": "Carne",
+   "tempoPreparo": "~1h20",
+   "refeicoes": [
+    {
+     "id": "pre",
+     "prato": "Pão com doce de leite + banana",
+     "receita": null,
+     "congela": false,
+     "itens": [
+      {
+       "alimento": "pao",
+       "g": 25,
+       "medida": "1 fatia"
+      },
+      {
+       "alimento": "doceleite",
+       "g": 20,
+       "medida": "1 col. sopa"
+      },
+      {
+       "alimento": "banana",
+       "g": 80,
+       "medida": "1 banana média sem casca"
+      }
+     ],
+     "macros": {
+      "kcal": 208,
+      "P": 6,
+      "C": 43,
+      "G": 3
+     }
+    },
+    {
+     "id": "cafe",
+     "prato": "4 ovos mexidos com requeijão + 2 fatias de pão + laranja",
+     "receita": "R7",
+     "congela": false,
+     "itens": [
+      {
+       "alimento": "ovo",
+       "g": 200,
+       "medida": "4 ovos médios"
+      },
+      {
+       "alimento": "pao",
+       "g": 50,
+       "medida": "2 fatias"
+      },
+      {
+       "alimento": "requeijao",
+       "g": 30,
+       "medida": "2 col. sopa"
+      },
+      {
+       "alimento": "laranja",
+       "g": 150,
+       "medida": "1 laranja média"
+      }
+     ],
+     "macros": {
+      "kcal": 526,
+      "P": 38,
+      "C": 36,
+      "G": 25
+     }
+    },
+    {
+     "id": "almoco",
+     "prato": "Escondidinho de carne com seleta e couve (purê de abóbora e batata)",
+     "receita": "R5",
+     "congela": true,
+     "itens": [
+      {
+       "alimento": "musculo",
+       "g": 120,
+       "medida": "2 conchas"
+      },
+      {
+       "alimento": "seleta",
+       "g": 80,
+       "medida": "½ xícara"
+      },
+      {
+       "alimento": "couve",
+       "g": 30,
+       "medida": "1 punhado"
+      },
+      {
+       "alimento": "aveia",
+       "g": 10,
+       "medida": "1 col. sopa"
+      },
+      {
+       "alimento": "cebola",
+       "g": 15,
+       "medida": "¼ cebola média"
+      },
+      {
+       "alimento": "oleo",
+       "g": 4,
+       "medida": "¼ col. sopa"
+      },
+      {
+       "alimento": "abobora",
+       "g": 180,
+       "medida": "1 xícara de purê"
+      },
+      {
+       "alimento": "batata",
+       "g": 125,
+       "medida": "½ xícara de purê"
+      },
+      {
+       "alimento": "leite",
+       "g": 30,
+       "medida": "¼ copo"
+      },
+      {
+       "alimento": "muss",
+       "g": 15,
+       "medida": "1 fatia"
+      }
+     ],
+     "macros": {
+      "kcal": 598,
+      "P": 51,
+      "C": 56,
+      "G": 20
+     }
+    },
+    {
+     "id": "jantar",
+     "prato": "Lanche de frango na airfryer + maçã",
+     "receita": "R6",
+     "congela": true,
+     "itens": [
+      {
+       "alimento": "pao",
+       "g": 50,
+       "medida": "2 fatias"
+      },
+      {
+       "alimento": "frango",
+       "g": 110,
+       "medida": "5 col. sopa cheias"
+      },
+      {
+       "alimento": "maionese",
+       "g": 12,
+       "medida": "1 col. sopa"
+      },
+      {
+       "alimento": "cenoura",
+       "g": 30,
+       "medida": "2 col. sopa"
+      },
+      {
+       "alimento": "muss",
+       "g": 15,
+       "medida": "1 fatia"
+      },
+      {
+       "alimento": "maca",
+       "g": 130,
+       "medida": "1 maçã média"
+      }
+     ],
+     "macros": {
+      "kcal": 478,
+      "P": 46,
+      "C": 43,
+      "G": 14
+     }
+    },
+    {
+     "id": "lanche",
+     "prato": "Sorvete de banana com whey, linhaça e girassol",
+     "receita": "R10",
+     "congela": true,
+     "itens": [
+      {
+       "alimento": "banana",
+       "g": 100,
+       "medida": "1¼ bananas médias sem casca"
+      },
+      {
+       "alimento": "whey",
+       "g": 40,
+       "medida": "2 dosadores"
+      },
+      {
+       "alimento": "leite",
+       "g": 50,
+       "medida": "¼ copo"
+      },
+      {
+       "alimento": "linhaca",
+       "g": 15,
+       "medida": "1½ col. sopa"
+      },
+      {
+       "alimento": "girassol",
+       "g": 10,
+       "medida": "1 col. sopa"
+      }
+     ],
+     "macros": {
+      "kcal": 415,
+      "P": 32,
+      "C": 45,
+      "G": 15
+     }
+    }
+   ]
+  },
+  "B": {
+   "nome": "Frango",
+   "tempoPreparo": "~1h45",
+   "refeicoes": [
+    {
+     "id": "pre",
+     "prato": "Banana na mussarela com aveia",
+     "receita": "R13",
+     "congela": false,
+     "itens": [
+      {
+       "alimento": "muss",
+       "g": 30,
+       "medida": "2 fatias"
+      },
+      {
+       "alimento": "banana",
+       "g": 80,
+       "medida": "1 banana média sem casca"
+      },
+      {
+       "alimento": "aveia",
+       "g": 10,
+       "medida": "1 col. sopa"
+      }
+     ],
+     "macros": {
+      "kcal": 217,
+      "P": 9,
+      "C": 28,
+      "G": 8
+     }
+    },
+    {
+     "id": "cafe",
+     "prato": "Vitamina de leite, whey, banana, aveia e linhaça",
+     "receita": "R13",
+     "congela": false,
+     "itens": [
+      {
+       "alimento": "leite",
+       "g": 250,
+       "medida": "1¼ copos"
+      },
+      {
+       "alimento": "whey",
+       "g": 40,
+       "medida": "2 dosadores"
+      },
+      {
+       "alimento": "banana",
+       "g": 80,
+       "medida": "1 banana média sem casca"
+      },
+      {
+       "alimento": "aveia",
+       "g": 30,
+       "medida": "3 col. sopa"
+      },
+      {
+       "alimento": "linhaca",
+       "g": 10,
+       "medida": "1 col. sopa"
+      }
+     ],
+     "macros": {
+      "kcal": 550,
+      "P": 39,
+      "C": 66,
+      "G": 18
+     }
+    },
+    {
+     "id": "almoco",
+     "prato": "Escondidinho de frango com seleta e espinafre (purê de batata-doce e abóbora)",
+     "receita": "R5",
+     "congela": true,
+     "itens": [
+      {
+       "alimento": "frango",
+       "g": 130,
+       "medida": "6 col. sopa cheias"
+      },
+      {
+       "alimento": "seleta",
+       "g": 100,
+       "medida": "¾ xícara"
+      },
+      {
+       "alimento": "espinafre",
+       "g": 50,
+       "medida": "¼ xícara"
+      },
+      {
+       "alimento": "tomate",
+       "g": 40,
+       "medida": "½ tomate médio"
+      },
+      {
+       "alimento": "cebola",
+       "g": 15,
+       "medida": "¼ cebola média"
+      },
+      {
+       "alimento": "oleo",
+       "g": 3,
+       "medida": "¼ col. sopa"
+      },
+      {
+       "alimento": "bdoce",
+       "g": 150,
+       "medida": "¾ xícara de purê"
+      },
+      {
+       "alimento": "abobora",
+       "g": 100,
+       "medida": "½ xícara de purê"
+      },
+      {
+       "alimento": "requeijao",
+       "g": 30,
+       "medida": "2 col. sopa"
+      },
+      {
+       "alimento": "muss",
+       "g": 15,
+       "medida": "1 fatia"
+      }
+     ],
+     "macros": {
+      "kcal": 602,
+      "P": 56,
+      "C": 62,
+      "G": 15
+     }
+    },
+    {
+     "id": "jantar",
+     "prato": "Lanche de frango cremoso na airfryer + laranja",
+     "receita": "R6",
+     "congela": true,
+     "itens": [
+      {
+       "alimento": "pao",
+       "g": 50,
+       "medida": "2 fatias"
+      },
+      {
+       "alimento": "frango",
+       "g": 110,
+       "medida": "5 col. sopa cheias"
+      },
+      {
+       "alimento": "requeijao",
+       "g": 20,
+       "medida": "1¼ col. sopa"
+      },
+      {
+       "alimento": "cenoura",
+       "g": 30,
+       "medida": "2 col. sopa"
+      },
+      {
+       "alimento": "muss",
+       "g": 15,
+       "medida": "1 fatia"
+      },
+      {
+       "alimento": "laranja",
+       "g": 150,
+       "medida": "1 laranja média"
+      }
+     ],
+     "macros": {
+      "kcal": 459,
+      "P": 49,
+      "C": 37,
+      "G": 13
+     }
+    },
+    {
+     "id": "lanche",
+     "prato": "Creme de ricota com whey e doce de leite",
+     "receita": "R11",
+     "congela": true,
+     "itens": [
+      {
+       "alimento": "ricota",
+       "g": 60,
+       "medida": "3 col. sopa"
+      },
+      {
+       "alimento": "whey",
+       "g": 30,
+       "medida": "1½ dosadores"
+      },
+      {
+       "alimento": "doceleite",
+       "g": 20,
+       "medida": "1 col. sopa"
+      },
+      {
+       "alimento": "banana",
+       "g": 40,
+       "medida": "½ banana média sem casca"
+      },
+      {
+       "alimento": "leite",
+       "g": 30,
+       "medida": "¼ copo"
+      },
+      {
+       "alimento": "linhaca",
+       "g": 10,
+       "medida": "1 col. sopa"
+      },
+      {
+       "alimento": "girassol",
+       "g": 10,
+       "medida": "1 col. sopa"
+      }
+     ],
+     "macros": {
+      "kcal": 407,
+      "P": 30,
+      "C": 39,
+      "G": 17
+     }
+    }
+   ]
+  },
+  "C": {
+   "nome": "Carne e sardinha",
+   "tempoPreparo": "~1h",
+   "refeicoes": [
+    {
+     "id": "pre",
+     "prato": "Pão com doce de leite + banana",
+     "receita": null,
+     "congela": false,
+     "itens": [
+      {
+       "alimento": "pao",
+       "g": 25,
+       "medida": "1 fatia"
+      },
+      {
+       "alimento": "doceleite",
+       "g": 20,
+       "medida": "1 col. sopa"
+      },
+      {
+       "alimento": "banana",
+       "g": 80,
+       "medida": "1 banana média sem casca"
+      }
+     ],
+     "macros": {
+      "kcal": 208,
+      "P": 6,
+      "C": 43,
+      "G": 3
+     }
+    },
+    {
+     "id": "cafe",
+     "prato": "Cuscuz + 3 ovos mexidos com mussarela + laranja",
+     "receita": "R8",
+     "congela": false,
+     "itens": [
+      {
+       "alimento": "flocao",
+       "g": 40,
+       "medida": "4 col. sopa cheias"
+      },
+      {
+       "alimento": "ovo",
+       "g": 150,
+       "medida": "3 ovos médios"
+      },
+      {
+       "alimento": "muss",
+       "g": 15,
+       "medida": "1 fatia"
+      },
+      {
+       "alimento": "laranja",
+       "g": 150,
+       "medida": "1 laranja média"
+      }
+     ],
+     "macros": {
+      "kcal": 468,
+      "P": 28,
+      "C": 46,
+      "G": 19
+     }
+    },
+    {
+     "id": "almoco",
+     "prato": "Escondidinho de carne com seleta e espinafre (purê de batata)",
+     "receita": "R5",
+     "congela": true,
+     "itens": [
+      {
+       "alimento": "musculo",
+       "g": 120,
+       "medida": "2 conchas"
+      },
+      {
+       "alimento": "seleta",
+       "g": 120,
+       "medida": "1 xícara"
+      },
+      {
+       "alimento": "espinafre",
+       "g": 50,
+       "medida": "¼ xícara"
+      },
+      {
+       "alimento": "tomate",
+       "g": 40,
+       "medida": "½ tomate médio"
+      },
+      {
+       "alimento": "aveia",
+       "g": 15,
+       "medida": "1½ col. sopa"
+      },
+      {
+       "alimento": "cebola",
+       "g": 15,
+       "medida": "¼ cebola média"
+      },
+      {
+       "alimento": "oleo",
+       "g": 4,
+       "medida": "¼ col. sopa"
+      },
+      {
+       "alimento": "batata",
+       "g": 200,
+       "medida": "1 xícara de purê"
+      },
+      {
+       "alimento": "leite",
+       "g": 30,
+       "medida": "¼ copo"
+      },
+      {
+       "alimento": "muss",
+       "g": 15,
+       "medida": "1 fatia"
+      }
+     ],
+     "macros": {
+      "kcal": 600,
+      "P": 52,
+      "C": 56,
+      "G": 19
+     }
+    },
+    {
+     "id": "jantar",
+     "prato": "Sanduíche de sardinha cremosa (sem fogão) + ovo cozido + maçã",
+     "receita": "R9",
+     "congela": true,
+     "itens": [
+      {
+       "alimento": "pao",
+       "g": 50,
+       "medida": "2 fatias"
+      },
+      {
+       "alimento": "sardinha",
+       "g": 84,
+       "medida": "1 lata"
+      },
+      {
+       "alimento": "requeijao",
+       "g": 20,
+       "medida": "1¼ col. sopa"
+      },
+      {
+       "alimento": "cenoura",
+       "g": 30,
+       "medida": "2 col. sopa"
+      },
+      {
+       "alimento": "repolho",
+       "g": 40,
+       "medida": "2 col. sopa ralado"
+      },
+      {
+       "alimento": "ovo",
+       "g": 50,
+       "medida": "1 ovo médio"
+      },
+      {
+       "alimento": "maca",
+       "g": 130,
+       "medida": "1 maçã média"
+      }
+     ],
+     "macros": {
+      "kcal": 490,
+      "P": 34,
+      "C": 46,
+      "G": 19
+     }
+    },
+    {
+     "id": "lanche",
+     "prato": "Mingau de aveia com whey e banana",
+     "receita": "R12",
+     "congela": true,
+     "itens": [
+      {
+       "alimento": "leite",
+       "g": 150,
+       "medida": "¾ copo"
+      },
+      {
+       "alimento": "aveia",
+       "g": 25,
+       "medida": "2½ col. sopa"
+      },
+      {
+       "alimento": "whey",
+       "g": 30,
+       "medida": "1½ dosadores"
+      },
+      {
+       "alimento": "banana",
+       "g": 40,
+       "medida": "½ banana média sem casca"
+      },
+      {
+       "alimento": "girassol",
+       "g": 10,
+       "medida": "1 col. sopa"
+      },
+      {
+       "alimento": "linhaca",
+       "g": 10,
+       "medida": "1 col. sopa"
+      }
+     ],
+     "macros": {
+      "kcal": 452,
+      "P": 31,
+      "C": 47,
+      "G": 18
+     }
+    }
+   ]
+  }
+ },
+ "alimentos": [
+  {
+   "id": "pao",
+   "nome": "Pão Nutrella Aveia e Sementes",
+   "grupo": "pao",
+   "medida": {
+    "nome": "fatia",
+    "g": 25
+   },
+   "por100g": {
+    "kcal": 272,
+    "P": 13.6,
+    "C": 40,
+    "G": 6.4,
+    "fibras": 6
+   },
+   "compra": {
+    "descricao": "Pão Nutrella Aveia e Sementes",
+    "modo": "emb",
+    "embalagemG": 500,
+    "unidade": "pacote",
+    "preco": 13.9,
+    "fator": 1,
+    "loja": "atacado"
+   }
+  },
+  {
+   "id": "whey",
+   "nome": "Whey concentrado morango",
+   "grupo": "suplemento",
+   "medida": {
+    "nome": "dosador",
+    "g": 20
+   },
+   "por100g": {
+    "kcal": 370,
+    "P": 60,
+    "C": 26,
+    "G": 6,
+    "fibras": 0
+   }
+  },
+  {
+   "id": "ovo",
+   "nome": "Ovo",
+   "grupo": "proteina",
+   "medida": {
+    "nome": "ovo médio",
+    "g": 50
+   },
+   "por100g": {
+    "kcal": 146,
+    "P": 13.3,
+    "C": 0.6,
+    "G": 9.5,
+    "fibras": 0
+   },
+   "compra": {
+    "descricao": "Ovos médios (cartela 30)",
+    "modo": "emb",
+    "embalagemG": 1500,
+    "unidade": "cartela",
+    "preco": 21.9,
+    "fator": 1,
+    "loja": "atacado"
+   }
+  },
+  {
+   "id": "muss",
+   "nome": "Mussarela fatiada",
+   "grupo": "laticinio",
+   "medida": {
+    "nome": "fatia",
+    "g": 15
+   },
+   "por100g": {
+    "kcal": 330,
+    "P": 22.6,
+    "C": 3,
+    "G": 25.2,
+    "fibras": 0
+   },
+   "compra": {
+    "descricao": "Mussarela fatiada (bandeja 200 g)",
+    "modo": "emb",
+    "embalagemG": 200,
+    "unidade": "bandeja",
+    "preco": 7.5,
+    "fator": 1,
+    "loja": "atacado"
+   }
+  },
+  {
+   "id": "requeijao",
+   "nome": "Requeijão light",
+   "grupo": "laticinio",
+   "medida": {
+    "nome": "col. sopa",
+    "g": 15
+   },
+   "por100g": {
+    "kcal": 143,
+    "P": 10,
+    "C": 4,
+    "G": 9.7,
+    "fibras": 0
+   },
+   "compra": {
+    "descricao": "Requeijão Light (200 g)",
+    "modo": "emb",
+    "embalagemG": 200,
+    "unidade": "pote",
+    "preco": 8.99,
+    "fator": 1,
+    "loja": "atacado"
+   }
+  },
+  {
+   "id": "ricota",
+   "nome": "Ricota light",
+   "grupo": "laticinio",
+   "medida": {
+    "nome": "col. sopa",
+    "g": 20
+   },
+   "por100g": {
+    "kcal": 110,
+    "P": 10,
+    "C": 3,
+    "G": 6.5,
+    "fibras": 0
+   },
+   "compra": {
+    "descricao": "Ricota Light (~250 g)",
+    "modo": "emb",
+    "embalagemG": 250,
+    "unidade": "peça",
+    "preco": 8.5,
+    "fator": 1,
+    "loja": "atacado"
+   }
+  },
+  {
+   "id": "frango",
+   "nome": "Frango desfiado (cozido)",
+   "grupo": "proteina",
+   "medida": {
+    "nome": "col. sopa cheia",
+    "g": 22
+   },
+   "por100g": {
+    "kcal": 163,
+    "P": 31.5,
+    "C": 0,
+    "G": 3.2,
+    "fibras": 0
+   },
+   "compra": {
+    "descricao": "Peito de frango com osso congelado",
+    "modo": "kg",
+    "embalagemG": 1000,
+    "unidade": "kg",
+    "preco": 9.9,
+    "fator": 1.905,
+    "loja": "atacado"
+   }
+  },
+  {
+   "id": "musculo",
+   "nome": "Músculo moído (cozido)",
+   "grupo": "proteina",
+   "medida": {
+    "nome": "concha",
+    "g": 60
+   },
+   "por100g": {
+    "kcal": 194,
+    "P": 31.2,
+    "C": 0,
+    "G": 6.7,
+    "fibras": 0
+   },
+   "compra": {
+    "descricao": "Músculo bovino moído 2x (açougue)",
+    "modo": "kg",
+    "embalagemG": 1000,
+    "unidade": "kg",
+    "preco": 40,
+    "fator": 1.429,
+    "loja": "atacado"
+   }
+  },
+  {
+   "id": "sardinha",
+   "nome": "Sardinha em lata (escorrida)",
+   "grupo": "proteina",
+   "medida": {
+    "nome": "lata",
+    "g": 84
+   },
+   "por100g": {
+    "kcal": 190,
+    "P": 21,
+    "C": 1,
+    "G": 11,
+    "fibras": 0
+   },
+   "compra": {
+    "descricao": "Sardinha em lata 125 g",
+    "modo": "emb",
+    "embalagemG": 84,
+    "unidade": "lata",
+    "preco": 5.99,
+    "fator": 1,
+    "loja": "atacado"
+   }
+  },
+  {
+   "id": "flocao",
+   "nome": "Flocão de milho",
+   "grupo": "carbo",
+   "medida": {
+    "nome": "col. sopa cheia",
+    "g": 10
+   },
+   "por100g": {
+    "kcal": 360,
+    "P": 7.2,
+    "C": 78,
+    "G": 1.9,
+    "fibras": 4.7
+   },
+   "compra": {
+    "descricao": "Flocão de milho (500 g)",
+    "modo": "emb",
+    "embalagemG": 500,
+    "unidade": "pacote",
+    "preco": 3.49,
+    "fator": 1,
+    "loja": "atacado"
+   }
+  },
+  {
+   "id": "aveia",
+   "nome": "Aveia em flocos",
+   "grupo": "carbo",
+   "medida": {
+    "nome": "col. sopa",
+    "g": 10
+   },
+   "por100g": {
+    "kcal": 394,
+    "P": 13.9,
+    "C": 66.6,
+    "G": 8.5,
+    "fibras": 9.1
+   },
+   "compra": {
+    "descricao": "Aveia em flocos (500 g)",
+    "modo": "emb",
+    "embalagemG": 500,
+    "unidade": "pacote",
+    "preco": 8.9,
+    "fator": 1,
+    "loja": "atacado"
+   }
+  },
+  {
+   "id": "batata",
+   "nome": "Batata (cozida)",
+   "grupo": "carbo",
+   "medida": {
+    "nome": "xícara de purê",
+    "g": 200
+   },
+   "por100g": {
+    "kcal": 52,
+    "P": 1.2,
+    "C": 11.9,
+    "G": 0.1,
+    "fibras": 1.3
+   },
+   "compra": {
+    "descricao": "Batata",
+    "modo": "kg",
+    "embalagemG": 1000,
+    "unidade": "kg",
+    "preco": 8.69,
+    "fator": 1.1,
+    "loja": "hortifruti"
+   }
+  },
+  {
+   "id": "abobora",
+   "nome": "Abóbora cabotiá (cozida)",
+   "grupo": "carbo",
+   "medida": {
+    "nome": "xícara de purê",
+    "g": 200
+   },
+   "por100g": {
+    "kcal": 48,
+    "P": 1.4,
+    "C": 10.8,
+    "G": 0.7,
+    "fibras": 2.5
+   },
+   "compra": {
+    "descricao": "Abóbora cabotiá",
+    "modo": "kg",
+    "embalagemG": 1000,
+    "unidade": "kg",
+    "preco": 3.69,
+    "fator": 1.3,
+    "loja": "hortifruti"
+   }
+  },
+  {
+   "id": "bdoce",
+   "nome": "Batata-doce (cozida)",
+   "grupo": "carbo",
+   "medida": {
+    "nome": "xícara de purê",
+    "g": 200
+   },
+   "por100g": {
+    "kcal": 90,
+    "P": 1.6,
+    "C": 21,
+    "G": 0.1,
+    "fibras": 2.8
+   },
+   "compra": {
+    "descricao": "Batata-doce",
+    "modo": "kg",
+    "embalagemG": 1000,
+    "unidade": "kg",
+    "preco": 3.99,
+    "fator": 1.25,
+    "loja": "hortifruti"
+   }
+  },
+  {
+   "id": "banana",
+   "nome": "Banana nanica",
+   "grupo": "fruta",
+   "medida": {
+    "nome": "banana média sem casca",
+    "g": 80
+   },
+   "por100g": {
+    "kcal": 98,
+    "P": 1.3,
+    "C": 26,
+    "G": 0.1,
+    "fibras": 2
+   },
+   "compra": {
+    "descricao": "Banana nanica",
+    "modo": "kg",
+    "embalagemG": 1000,
+    "unidade": "kg",
+    "preco": 5.99,
+    "fator": 1.5,
+    "loja": "hortifruti"
+   }
+  },
+  {
+   "id": "maca",
+   "nome": "Maçã fuji",
+   "grupo": "fruta",
+   "medida": {
+    "nome": "maçã média",
+    "g": 130
+   },
+   "por100g": {
+    "kcal": 56,
+    "P": 0.3,
+    "C": 15.2,
+    "G": 0.2,
+    "fibras": 2
+   },
+   "compra": {
+    "descricao": "Maçã fuji",
+    "modo": "kg",
+    "embalagemG": 1000,
+    "unidade": "kg",
+    "preco": 4.49,
+    "fator": 1.1,
+    "loja": "hortifruti"
+   }
+  },
+  {
+   "id": "laranja",
+   "nome": "Laranja pera",
+   "grupo": "fruta",
+   "medida": {
+    "nome": "laranja média",
+    "g": 150
+   },
+   "por100g": {
+    "kcal": 37,
+    "P": 1,
+    "C": 8.9,
+    "G": 0.1,
+    "fibras": 0.8
+   },
+   "compra": {
+    "descricao": "Laranja pera",
+    "modo": "kg",
+    "embalagemG": 1000,
+    "unidade": "kg",
+    "preco": 2.99,
+    "fator": 1.4,
+    "loja": "hortifruti"
+   }
+  },
+  {
+   "id": "leite",
+   "nome": "Leite integral",
+   "grupo": "laticinio",
+   "medida": {
+    "nome": "copo",
+    "g": 200
+   },
+   "por100g": {
+    "kcal": 61,
+    "P": 3.2,
+    "C": 4.6,
+    "G": 3.3,
+    "fibras": 0
+   },
+   "compra": {
+    "descricao": "Leite integral 1 L",
+    "modo": "emb",
+    "embalagemG": 1000,
+    "unidade": "caixa",
+    "preco": 5.29,
+    "fator": 1,
+    "loja": "atacado"
+   }
+  },
+  {
+   "id": "doceleite",
+   "nome": "Doce de leite",
+   "grupo": "doce",
+   "medida": {
+    "nome": "col. sopa",
+    "g": 20
+   },
+   "por100g": {
+    "kcal": 306,
+    "P": 5.5,
+    "C": 59.5,
+    "G": 6,
+    "fibras": 0
+   },
+   "compra": {
+    "descricao": "Doce de leite (400 g)",
+    "modo": "emb",
+    "embalagemG": 400,
+    "unidade": "pote",
+    "preco": 11.9,
+    "fator": 1,
+    "loja": "atacado"
+   }
+  },
+  {
+   "id": "maionese",
+   "nome": "Maionese light",
+   "grupo": "gordura",
+   "medida": {
+    "nome": "col. sopa",
+    "g": 12
+   },
+   "por100g": {
+    "kcal": 250,
+    "P": 0.5,
+    "C": 7,
+    "G": 24,
+    "fibras": 0
+   },
+   "compra": {
+    "descricao": "Maionese light (250 g)",
+    "modo": "emb",
+    "embalagemG": 250,
+    "unidade": "pote",
+    "preco": 7.49,
+    "fator": 1,
+    "loja": "atacado"
+   }
+  },
+  {
+   "id": "cenoura",
+   "nome": "Cenoura ralada",
+   "grupo": "legume",
+   "medida": {
+    "nome": "col. sopa",
+    "g": 15
+   },
+   "por100g": {
+    "kcal": 34,
+    "P": 1.3,
+    "C": 7.7,
+    "G": 0.2,
+    "fibras": 3.2
+   },
+   "compra": {
+    "descricao": "Cenoura",
+    "modo": "kg",
+    "embalagemG": 1000,
+    "unidade": "kg",
+    "preco": 6.19,
+    "fator": 1.1,
+    "loja": "hortifruti"
+   }
+  },
+  {
+   "id": "tomate",
+   "nome": "Tomate",
+   "grupo": "legume",
+   "medida": {
+    "nome": "tomate médio",
+    "g": 100
+   },
+   "por100g": {
+    "kcal": 15,
+    "P": 1.1,
+    "C": 3.1,
+    "G": 0.2,
+    "fibras": 1.2
+   },
+   "compra": {
+    "descricao": "Tomate",
+    "modo": "kg",
+    "embalagemG": 1000,
+    "unidade": "kg",
+    "preco": 5.99,
+    "fator": 1.05,
+    "loja": "hortifruti"
+   }
+  },
+  {
+   "id": "cebola",
+   "nome": "Cebola",
+   "grupo": "tempero",
+   "medida": {
+    "nome": "cebola média",
+    "g": 100
+   },
+   "por100g": {
+    "kcal": 39,
+    "P": 1.7,
+    "C": 8.9,
+    "G": 0.1,
+    "fibras": 2.2
+   },
+   "compra": {
+    "descricao": "Cebola",
+    "modo": "kg",
+    "embalagemG": 1000,
+    "unidade": "kg",
+    "preco": 5.99,
+    "fator": 1.1,
+    "loja": "hortifruti"
+   }
+  },
+  {
+   "id": "couve",
+   "nome": "Couve-manteiga fatiada",
+   "grupo": "verde",
+   "medida": {
+    "nome": "punhado",
+    "g": 30
+   },
+   "por100g": {
+    "kcal": 45,
+    "P": 2.5,
+    "C": 4.5,
+    "G": 2.2,
+    "fibras": 3.1
+   },
+   "compra": {
+    "descricao": "Couve-manteiga fatiada (maço ~200 g)",
+    "modo": "emb",
+    "embalagemG": 200,
+    "unidade": "maço",
+    "preco": 3.99,
+    "fator": 1.2,
+    "loja": "hortifruti"
+   }
+  },
+  {
+   "id": "repolho",
+   "nome": "Repolho",
+   "grupo": "verde",
+   "medida": {
+    "nome": "col. sopa ralado",
+    "g": 20
+   },
+   "por100g": {
+    "kcal": 25,
+    "P": 1.3,
+    "C": 5.8,
+    "G": 0.1,
+    "fibras": 2.5
+   },
+   "compra": {
+    "descricao": "Repolho (1/4 de cabeça)",
+    "modo": "kg",
+    "embalagemG": 1000,
+    "unidade": "kg",
+    "preco": 3.99,
+    "fator": 1.15,
+    "loja": "hortifruti"
+   }
+  },
+  {
+   "id": "seleta",
+   "nome": "Seleta de legumes congelada",
+   "grupo": "legume",
+   "medida": {
+    "nome": "xícara",
+    "g": 130
+   },
+   "por100g": {
+    "kcal": 65,
+    "P": 2.9,
+    "C": 13.1,
+    "G": 0.2,
+    "fibras": 4.4
+   },
+   "compra": {
+    "descricao": "Seleta de legumes congelada (1 kg)",
+    "modo": "emb",
+    "embalagemG": 1000,
+    "unidade": "pacote",
+    "preco": 17.9,
+    "fator": 1,
+    "loja": "atacado"
+   }
+  },
+  {
+   "id": "espinafre",
+   "nome": "Espinafre congelado",
+   "grupo": "verde",
+   "medida": {
+    "nome": "xícara",
+    "g": 150
+   },
+   "por100g": {
+    "kcal": 23,
+    "P": 3,
+    "C": 3.8,
+    "G": 0.3,
+    "fibras": 2.4
+   },
+   "compra": {
+    "descricao": "Espinafre congelado (1 kg)",
+    "modo": "emb",
+    "embalagemG": 1000,
+    "unidade": "pacote",
+    "preco": 22,
+    "fator": 1,
+    "loja": "atacado"
+   }
+  },
+  {
+   "id": "linhaca",
+   "nome": "Linhaça dourada triturada",
+   "grupo": "semente",
+   "medida": {
+    "nome": "col. sopa",
+    "g": 10
+   },
+   "por100g": {
+    "kcal": 534,
+    "P": 18.3,
+    "C": 28.9,
+    "G": 42.2,
+    "fibras": 27.3
+   },
+   "compra": {
+    "descricao": "Linhaça dourada triturada (200 g)",
+    "modo": "emb",
+    "embalagemG": 200,
+    "unidade": "pacote",
+    "preco": 8.9,
+    "fator": 1,
+    "loja": "atacado"
+   }
+  },
+  {
+   "id": "girassol",
+   "nome": "Semente de girassol sem casca",
+   "grupo": "semente",
+   "medida": {
+    "nome": "col. sopa",
+    "g": 10
+   },
+   "por100g": {
+    "kcal": 582,
+    "P": 19.3,
+    "C": 24,
+    "G": 49.8,
+    "fibras": 9
+   },
+   "compra": {
+    "descricao": "Semente de girassol sem casca (200 g)",
+    "modo": "emb",
+    "embalagemG": 200,
+    "unidade": "pacote",
+    "preco": 7,
+    "fator": 1,
+    "loja": "atacado"
+   }
+  },
+  {
+   "id": "oleo",
+   "nome": "Óleo de soja",
+   "grupo": "gordura",
+   "medida": {
+    "nome": "col. sopa",
+    "g": 13
+   },
+   "por100g": {
+    "kcal": 884,
+    "P": 0,
+    "C": 0,
+    "G": 100,
+    "fibras": 0
+   }
+  },
+  {
+   "id": "ervilha",
+   "nome": "Ervilha congelada",
+   "grupo": "legume",
+   "medida": {
+    "nome": "xícara",
+    "g": 130
+   },
+   "por100g": {
+    "kcal": 78,
+    "P": 5.2,
+    "C": 14.3,
+    "G": 0.3,
+    "fibras": 4.5
+   }
+  },
+  {
+   "id": "brocolis",
+   "nome": "Brócolis congelado",
+   "grupo": "verde",
+   "medida": {
+    "nome": "xícara",
+    "g": 90
+   },
+   "por100g": {
+    "kcal": 28,
+    "P": 3.1,
+    "C": 5.4,
+    "G": 0.1,
+    "fibras": 3
+   }
+  },
+  {
+   "id": "abobrinha",
+   "nome": "Abobrinha",
+   "grupo": "legume",
+   "medida": {
+    "nome": "xícara",
+    "g": 120
+   },
+   "por100g": {
+    "kcal": 20,
+    "P": 1.1,
+    "C": 3.3,
+    "G": 0.3,
+    "fibras": 1.2
+   }
+  },
+  {
+   "id": "beterraba",
+   "nome": "Beterraba cozida",
+   "grupo": "legume",
+   "medida": {
+    "nome": "xícara",
+    "g": 140
+   },
+   "por100g": {
+    "kcal": 32,
+    "P": 1.3,
+    "C": 7.2,
+    "G": 0.1,
+    "fibras": 1.9
+   }
+  },
+  {
+   "id": "morango",
+   "nome": "Morango",
+   "grupo": "fruta",
+   "medida": {
+    "nome": "xícara",
+    "g": 150
+   },
+   "por100g": {
+    "kcal": 32,
+    "P": 0.7,
+    "C": 7.7,
+    "G": 0.3,
+    "fibras": 2
+   }
+  },
+  {
+   "id": "mandioca",
+   "nome": "Mandioca cozida",
+   "grupo": "carbo",
+   "medida": {
+    "nome": "xícara",
+    "g": 140
+   },
+   "por100g": {
+    "kcal": 125,
+    "P": 0.6,
+    "C": 30.1,
+    "G": 0.3,
+    "fibras": 1.6
+   }
+  },
+  {
+   "id": "arroz",
+   "nome": "Arroz branco cozido",
+   "grupo": "carbo",
+   "medida": {
+    "nome": "col. servir",
+    "g": 45
+   },
+   "por100g": {
+    "kcal": 128,
+    "P": 2.5,
+    "C": 28.1,
+    "G": 0.2,
+    "fibras": 1.6
+   }
+  },
+  {
+   "id": "macarrao_int",
+   "nome": "Macarrão integral cozido",
+   "grupo": "carbo",
+   "medida": {
+    "nome": "xícara",
+    "g": 140
+   },
+   "por100g": {
+    "kcal": 149,
+    "P": 6,
+    "C": 30,
+    "G": 1.7,
+    "fibras": 3.9
+   }
+  },
+  {
+   "id": "mamao",
+   "nome": "Mamão",
+   "grupo": "fruta",
+   "medida": {
+    "nome": "fatia média",
+    "g": 150
+   },
+   "por100g": {
+    "kcal": 40,
+    "P": 0.5,
+    "C": 10.4,
+    "G": 0.1,
+    "fibras": 1
+   }
+  },
+  {
+   "id": "manga",
+   "nome": "Manga",
+   "grupo": "fruta",
+   "medida": {
+    "nome": "xícara em cubos",
+    "g": 165
+   },
+   "por100g": {
+    "kcal": 72,
+    "P": 0.4,
+    "C": 19.4,
+    "G": 0.2,
+    "fibras": 1.6
+   }
+  },
+  {
+   "id": "patinho",
+   "nome": "Patinho moído (cozido)",
+   "grupo": "proteina",
+   "medida": {
+    "nome": "concha",
+    "g": 60
+   },
+   "por100g": {
+    "kcal": 219,
+    "P": 35.9,
+    "C": 0,
+    "G": 7.3,
+    "fibras": 0
+   }
+  },
+  {
+   "id": "minas",
+   "nome": "Queijo minas frescal",
+   "grupo": "laticinio",
+   "medida": {
+    "nome": "fatia",
+    "g": 30
+   },
+   "por100g": {
+    "kcal": 264,
+    "P": 17.4,
+    "C": 3.2,
+    "G": 20.2,
+    "fibras": 0
+   }
+  },
+  {
+   "id": "iogurte",
+   "nome": "Iogurte natural integral",
+   "grupo": "laticinio",
+   "medida": {
+    "nome": "pote",
+    "g": 170
+   },
+   "por100g": {
+    "kcal": 51,
+    "P": 4.1,
+    "C": 1.9,
+    "G": 3,
+    "fibras": 0
+   }
+  }
+ ],
+ "receitas": [
+  {
+   "id": "R0",
+   "nome": "Temperos da casa",
+   "porcoes": null,
+   "passos": [
+    {
+     "titulo": "Solte a casca do alho",
+     "detalhe": "Separe os dentes de 2 cabeças de alho (~100 g), ponha num pote com tampa e sacuda forte por 20 s: a casca solta.",
+     "acao": "misturar",
+     "ingredientes": [
+      "alho"
+     ],
+     "segundos": 20
+    },
+    {
+     "titulo": "Bata a pasta de alho",
+     "detalhe": "Mixer ou liquidificador: o alho + 1 col. sopa de sal + 3 col. sopa de óleo. Pulse 30–40 s raspando as laterais até virar pasta.",
+     "acao": "liquidificador",
+     "ingredientes": [
+      "alho",
+      "sal"
+     ]
+    },
+    {
+     "titulo": "Guarde na geladeira",
+     "detalhe": "Pote de vidro com tampa, até 2 semanas. Sempre colher limpa e seca.",
+     "acao": "geladeira",
+     "ingredientes": [
+      "alho"
+     ]
+    },
+    {
+     "titulo": "Monte o mix seco vermelho",
+     "detalhe": "Num pote: 3 col. sopa de páprica defumada, 2 de colorau, 1 de cominho, 1 de orégano e 1 col. chá de pimenta-do-reino. Tampe e sacuda. Rende ~8 col. sopa e dura 1 mês no armário.",
+     "acao": "misturar",
+     "ingredientes": [
+      "paprica",
+      "colorau",
+      "cominho",
+      "oregano"
+     ]
+    },
+    {
+     "titulo": "Regra de ouro",
+     "detalhe": "Por kg de carne ou frango: 1 col. sopa de pasta de alho + 1 col. chá de mix seco. Sal extra só depois de provar: a pasta já tem sal.",
+     "acao": "polvilhar",
+     "ingredientes": [
+      "sal"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "R1",
+   "nome": "Frango desfiado na panela de pressão elétrica",
+   "porcoes": null,
+   "vespera": "Passe {frango:cru} do freezer para a geladeira, dentro de um pote (descongela em ~24 h). Esqueceu? Cozinhe congelado com +10 min de pressão.",
+   "passos": [
+    {
+     "titulo": "Lave as mãos e escorra",
+     "detalhe": "Abra a embalagem na pia, escorra o líquido e ponha o frango numa tigela grande. Não lave o frango: espalha bactérias pela pia.",
+     "acao": "lavar",
+     "ingredientes": [
+      "frango"
+     ]
+    },
+    {
+     "titulo": "Marine",
+     "detalhe": "Para cada 1 kg: 1 col. sopa de pasta de alho, suco de 1 limão, 1 col. chá de mix seco e ½ col. chá de pimenta. Esfregue em todos os pedaços e deixe 20 min (ou de um dia para o outro, tampado, na geladeira). Lave as mãos.",
+     "acao": "marinar",
+     "ingredientes": [
+      "frango",
+      "limao",
+      "alho"
+     ],
+     "segundos": 1200
+    },
+    {
+     "titulo": "Pique a cebola",
+     "detalhe": "Enquanto marina: 1 cebola média por kg, em cubinhos.",
+     "acao": "cortar",
+     "ingredientes": [
+      "cebola"
+     ]
+    },
+    {
+     "titulo": "Refogue a cebola",
+     "detalhe": "Panela elétrica em Refogar/Dourar. Espere 2 min, 1 col. sopa de óleo e a cebola; mexa 3 min até ficar transparente.",
+     "acao": "refogar",
+     "ingredientes": [
+      "cebola"
+     ],
+     "segundos": 180
+    },
+    {
+     "titulo": "Frango + água + louro",
+     "detalhe": "Junte o frango com toda a marinada, 2 folhas de louro e 1 xícara de água por kg. Não passe de ⅔ da panela. Cancele o Refogar.",
+     "acao": "montar",
+     "ingredientes": [
+      "frango",
+      "louro"
+     ]
+    },
+    {
+     "titulo": "Pressão: 15 min",
+     "detalhe": "Tampe, trave, válvula em vedar. 15 min em pressão alta (25 min se congelado). A panela trabalha sozinha: siga para a próxima tarefa.",
+     "acao": "pressao",
+     "ingredientes": [
+      "frango"
+     ],
+     "segundos": 900,
+     "paralelo": true
+    },
+    {
+     "titulo": "Solte o vapor com cuidado",
+     "detalhe": "Quando apitar, deixe a pressão sair sozinha 10 min. Depois vire a válvula com uma colher de pau, rosto longe. Abra só quando o pino baixar.",
+     "acao": "soltar_vapor",
+     "ingredientes": [],
+     "segundos": 600
+    },
+    {
+     "titulo": "Tire para a assadeira",
+     "detalhe": "Pedaços com escumadeira para uma assadeira; o caldo fica na panela. Espere 5–10 min até dar para pegar.",
+     "acao": "esfriar",
+     "ingredientes": [],
+     "segundos": 420
+    },
+    {
+     "titulo": "Desfie",
+     "detalhe": "Dois garfos puxando em sentidos opostos (ou mãos de luva). Osso, pele e cartilagem: descarte.",
+     "acao": "desfiar",
+     "ingredientes": [
+      "frango"
+     ]
+    },
+    {
+     "titulo": "Seque no caldo",
+     "detalhe": "Volte o desfiado para a panela com ½ concha de caldo por kg, Refogar 3–5 min mexendo até absorver. Prove o sal, desligue e misture 2 col. sopa de cheiro-verde.",
+     "acao": "refogar",
+     "ingredientes": [
+      "frango",
+      "cheiro_verde"
+     ],
+     "segundos": 240
+    }
+   ]
+  },
+  {
+   "id": "R2",
+   "nome": "Carne com legumes (panela 1 de A e C)",
+   "porcoes": "almoco",
+   "so": [
+    "A",
+    "C"
+   ],
+   "passos": [
+    {
+     "titulo": "Prepare a bancada",
+     "detalhe": "Tire {musculo:cru} da geladeira 15 min antes. Pique {cebola} (no C, também {tomate} sem sementes).",
+     "acao": "cortar",
+     "ingredientes": [
+      "cebola",
+      "tomate"
+     ]
+    },
+    {
+     "titulo": "Aqueça a panela vazia",
+     "detalhe": "A maior panela, vazia, em fogo alto por 2 min. Depois 1 col. sopa de óleo.",
+     "acao": "ferver",
+     "ingredientes": [],
+     "segundos": 120
+    },
+    {
+     "titulo": "Doure sem mexer",
+     "detalhe": "Metade da carne em camada fina e NÃO mexa por 2 min: ela doura em vez de cozinhar no vapor. Quebre com a colher e mexa até secar e ficar marrom (5 min). Repita com a outra metade.",
+     "acao": "dourar",
+     "ingredientes": [
+      "musculo"
+     ],
+     "segundos": 420
+    },
+    {
+     "titulo": "Tempere",
+     "detalhe": "Fogo médio. Junte a cebola, 1½ col. sopa de pasta de alho e 1½ col. chá de mix seco. Mexa 3 min.",
+     "acao": "refogar",
+     "ingredientes": [
+      "cebola",
+      "alho",
+      "paprica"
+     ],
+     "segundos": 180
+    },
+    {
+     "titulo": "Legumes direto do pacote",
+     "detalhe": "Despeje {seleta} ainda congelada (no C, junte também o tomate e {espinafre} congelado). Mexa, tampe e cozinhe 8 min mexendo na metade: o gelo dos legumes vira o molho.",
+     "acao": "cozinhar_tampado",
+     "ingredientes": [
+      "seleta",
+      "espinafre",
+      "tomate"
+     ],
+     "segundos": 480
+    },
+    {
+     "titulo": "Aveia para engrossar",
+     "detalhe": "Destampe, polvilhe {aveia} e mexa 2 min até o molho engrossar.",
+     "acao": "polvilhar",
+     "ingredientes": [
+      "aveia"
+     ],
+     "segundos": 120
+    },
+    {
+     "titulo": "Couve no calor da panela",
+     "detalhe": "Desligue o fogo, junte {couve} fatiada e misture: o calor cozinha a couve em 2 min sem amargar.",
+     "acao": "misturar",
+     "ingredientes": [
+      "couve"
+     ],
+     "segundos": 120,
+     "so": [
+      "A"
+     ]
+    },
+    {
+     "titulo": "Prove o sal",
+     "detalhe": "Acerte o sal. Panela 1 pronta.",
+     "acao": "misturar",
+     "ingredientes": []
+    }
+   ]
+  },
+  {
+   "id": "R3",
+   "nome": "Frango com legumes (panela 1 de B)",
+   "porcoes": "almoco",
+   "so": [
+    "B"
+   ],
+   "passos": [
+    {
+     "titulo": "Refogue a cebola",
+     "detalhe": "Panela grande em fogo médio, 1 col. sopa de óleo e {cebola} picada por 3 min.",
+     "acao": "refogar",
+     "ingredientes": [
+      "cebola"
+     ],
+     "segundos": 180
+    },
+    {
+     "titulo": "Tomate até desmanchar",
+     "detalhe": "Junte {tomate} picado e cozinhe 4 min amassando com a colher.",
+     "acao": "refogar",
+     "ingredientes": [
+      "tomate"
+     ],
+     "segundos": 240
+    },
+    {
+     "titulo": "Legumes congelados",
+     "detalhe": "Despeje {seleta} e {espinafre} direto do pacote. Tampe e cozinhe 8 min mexendo na metade.",
+     "acao": "cozinhar_tampado",
+     "ingredientes": [
+      "seleta",
+      "espinafre"
+     ],
+     "segundos": 480
+    },
+    {
+     "titulo": "Frango + caldo",
+     "detalhe": "Junte {frango} desfiado e ½ xícara do caldo. Mexa 3 min até ficar úmido e sem água no fundo. Prove o sal.",
+     "acao": "misturar",
+     "ingredientes": [
+      "frango"
+     ],
+     "segundos": 180
+    }
+   ]
+  },
+  {
+   "id": "R4",
+   "nome": "Purê (panela 2)",
+   "porcoes": "almoco",
+   "passos": [
+    {
+     "titulo": "Corte a abóbora",
+     "detalhe": "Lave a casca; se estiver dura, 3 min no micro-ondas. Corte ao meio com a faca bem apoiada, tire as sementes, descasque e corte {abobora:cru} em cubos de 3 cm.",
+     "acao": "cortar",
+     "ingredientes": [
+      "abobora"
+     ],
+     "so": [
+      "A",
+      "B"
+     ]
+    },
+    {
+     "titulo": "Descasque e corte",
+     "detalhe": "Descasque {batata:cru} (A e C) ou {bdoce:cru} (B) e corte em cubos de 3 cm.",
+     "acao": "descascar",
+     "ingredientes": [
+      "batata",
+      "bdoce"
+     ]
+    },
+    {
+     "titulo": "Água fria + sal",
+     "detalhe": "Cubos de batata (ou batata-doce) na panela grande, água fria 2 dedos acima, 1 col. chá de sal. Fogo alto até ferver, depois médio.",
+     "acao": "ferver",
+     "ingredientes": [
+      "batata",
+      "bdoce",
+      "sal"
+     ]
+    },
+    {
+     "titulo": "Abóbora depois",
+     "detalhe": "Depois de 5 min fervendo, junte a abóbora (cozinha mais rápido). Mais 12–15 min: pronto quando o garfo entra sem resistência.",
+     "acao": "ferver",
+     "ingredientes": [
+      "abobora"
+     ],
+     "segundos": 900,
+     "paralelo": true
+    },
+    {
+     "titulo": "Escorra e seque",
+     "detalhe": "Escorra muito bem. Volte à panela em fogo baixo 1 min, mexendo, para secar a água (purê aguado fica sem gosto).",
+     "acao": "escorrer",
+     "ingredientes": [],
+     "segundos": 60
+    },
+    {
+     "titulo": "Amasse quente",
+     "detalhe": "Desligue e amasse ainda quente com espremedor ou garfo (liquidificador deixa o purê com textura de cola).",
+     "acao": "amassar",
+     "ingredientes": [
+      "batata"
+     ]
+    },
+    {
+     "titulo": "Cremosidade",
+     "detalhe": "Junte {leite} morno (A e C) ou {requeijao} (B) e mexa até ficar cremoso. Acerte o sal.",
+     "acao": "misturar",
+     "ingredientes": [
+      "leite",
+      "requeijao"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "R5",
+   "nome": "Montagem dos escondidinhos",
+   "porcoes": "almoco",
+   "passos": [
+    {
+     "titulo": "Potes enfileirados",
+     "detalhe": "Alinhe {porcoes} potes de 750 ml na bancada.",
+     "acao": "montar",
+     "ingredientes": []
+    },
+    {
+     "titulo": "Panela 1 no fundo",
+     "detalhe": "Divida a panela 1 igualmente no fundo dos potes: uma colherada em cada, rodando até acabar.",
+     "acao": "montar",
+     "ingredientes": []
+    },
+    {
+     "titulo": "Purê por cima",
+     "detalhe": "Divida o purê do mesmo jeito e alise com as costas da colher.",
+     "acao": "montar",
+     "ingredientes": []
+    },
+    {
+     "titulo": "Mussarela",
+     "detalhe": "Uma fatia de mussarela em cima de cada pote.",
+     "acao": "montar",
+     "ingredientes": [
+      "muss"
+     ]
+    },
+    {
+     "titulo": "Esfrie e congele",
+     "detalhe": "Esfrie destampado até 30 min, tampe, etiquete com letra e dia e leve ao freezer.",
+     "acao": "congelar",
+     "ingredientes": [
+      "congelar"
+     ],
+     "segundos": 1800
+    },
+    {
+     "titulo": "Para comer",
+     "detalhe": "Na noite anterior, passe para a geladeira. Micro-ondas 4–5 min com a tampa apoiada, sem travar.",
+     "acao": "microondas",
+     "ingredientes": [],
+     "segundos": 270,
+     "momento": "servir"
+    }
+   ]
+  },
+  {
+   "id": "R6",
+   "nome": "Lanches de frango para airfryer (jantar A e B)",
+   "porcoes": "jantar",
+   "so": [
+    "A",
+    "B"
+   ],
+   "passos": [
+    {
+     "titulo": "Frango cremoso",
+     "detalhe": "Numa tigela, misture {frango} com {requeijao}.",
+     "acao": "misturar",
+     "ingredientes": [
+      "frango",
+      "requeijao"
+     ],
+     "so": [
+      "B"
+     ]
+    },
+    {
+     "titulo": "Papéis cortados",
+     "detalhe": "Bancada limpa e seca. Um quadrado de papel manteiga (~30 × 30 cm) e um de filme por lanche.",
+     "acao": "cortar",
+     "ingredientes": []
+    },
+    {
+     "titulo": "Monte os lanches",
+     "detalhe": "A: 2 fatias de pão, ½ col. sopa de maionese light em cada, 5 col. sopa cheias de frango, 2 col. sopa de cenoura ralada fina, 1 fatia de mussarela. B: 2 fatias de pão, 6 col. sopa do frango cremoso, 2 col. sopa de cenoura, 1 fatia de mussarela. Feche e aperte com a palma.",
+     "acao": "montar",
+     "ingredientes": [
+      "pao",
+      "frango",
+      "cenoura",
+      "muss",
+      "maionese"
+     ]
+    },
+    {
+     "titulo": "Embrulhe duplo",
+     "detalhe": "Papel manteiga como presente e, por fora, filme bem justo.",
+     "acao": "embrulhar",
+     "ingredientes": []
+    },
+    {
+     "titulo": "Congele deitado",
+     "detalhe": "Etiquete e congele deitado. Dura 2 meses.",
+     "acao": "congelar",
+     "ingredientes": [
+      "congelar"
+     ]
+    },
+    {
+     "titulo": "Para comer",
+     "detalhe": "Tire o filme, mantenha o papel manteiga. Airfryer 170 °C: 8 min descongelado ou 14 min congelado, virando na metade; abra o papel nos últimos 3 min.",
+     "acao": "airfryer",
+     "ingredientes": [
+      "airfryer"
+     ],
+     "segundos": 480,
+     "momento": "servir"
+    }
+   ]
+  },
+  {
+   "id": "R7",
+   "nome": "Ovos",
+   "porcoes": "jantar",
+   "passos": [
+    {
+     "titulo": "Bata os ovos",
+     "detalhe": "Mexidos (A: 4; C: 3): quebre numa tigela, 1 pitada de sal, bata com garfo 30 s.",
+     "acao": "misturar",
+     "ingredientes": [
+      "ovo"
+     ],
+     "segundos": 30,
+     "momento": "na_hora"
+    },
+    {
+     "titulo": "Fogo baixo",
+     "detalhe": "Frigideira antiaderente em fogo baixo, sem óleo (ou ½ col. chá).",
+     "acao": "frigideira",
+     "ingredientes": [],
+     "momento": "na_hora"
+    },
+    {
+     "titulo": "Empurre devagar",
+     "detalhe": "Despeje, espere 20 s e empurre das bordas para o centro, devagar, por 2–3 min.",
+     "acao": "frigideira",
+     "ingredientes": [
+      "ovo"
+     ],
+     "segundos": 150,
+     "momento": "na_hora"
+    },
+    {
+     "titulo": "Tire brilhante",
+     "detalhe": "Desligue ainda brilhantes: terminam no calor da frigideira. A: misture 1 col. sopa de requeijão. C: rasgue 1 fatia de mussarela por cima e tampe 30 s.",
+     "acao": "frigideira",
+     "ingredientes": [
+      "ovo",
+      "requeijao",
+      "muss"
+     ],
+     "segundos": 30,
+     "momento": "na_hora"
+    },
+    {
+     "titulo": "Água fervendo",
+     "detalhe": "Cozidos (C, {porcoes} de uma vez): panela média com água para cobrir, fogo alto.",
+     "acao": "ferver",
+     "ingredientes": [],
+     "so": [
+      "C"
+     ]
+    },
+    {
+     "titulo": "10 minutos",
+     "detalhe": "Ferveu: baixe os ovos com escumadeira, um a um. 10 min em fervura baixa.",
+     "acao": "ferver",
+     "ingredientes": [
+      "ovo"
+     ],
+     "segundos": 600,
+     "paralelo": true,
+     "so": [
+      "C"
+     ]
+    },
+    {
+     "titulo": "Choque frio",
+     "detalhe": "Tigela com água fria por 5 min. Guarde com casca na geladeira: 7 dias.",
+     "acao": "esfriar",
+     "ingredientes": [
+      "ovo"
+     ],
+     "segundos": 300,
+     "so": [
+      "C"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "R8",
+   "nome": "Cuscuz no micro-ondas (café C)",
+   "porcoes": "cafe",
+   "so": [
+    "C"
+   ],
+   "passos": [
+    {
+     "titulo": "Saquinhos do flocão",
+     "detalhe": "No dia do preparo: {porcoes} saquinhos com 4 col. sopa cheias de flocão (40 g) e 1 pitada de sal.",
+     "acao": "montar",
+     "ingredientes": [
+      "flocao"
+     ]
+    },
+    {
+     "titulo": "Hidrate 5 min",
+     "detalhe": "De manhã: 1 saquinho numa tigela funda + 4 col. sopa de água, misture e espere 5 min (faça os ovos nesse tempo).",
+     "acao": "esperar",
+     "ingredientes": [
+      "flocao"
+     ],
+     "segundos": 300,
+     "momento": "na_hora"
+    },
+    {
+     "titulo": "Micro-ondas",
+     "detalhe": "Tampe com um prato, 1½–2 min. Solte com garfo.",
+     "acao": "microondas",
+     "ingredientes": [],
+     "segundos": 105,
+     "momento": "na_hora"
+    }
+   ]
+  },
+  {
+   "id": "R9",
+   "nome": "Sanduíche de sardinha cremosa (jantar C, sem fogão)",
+   "porcoes": "jantar",
+   "so": [
+    "C"
+   ],
+   "passos": [
+    {
+     "titulo": "Abra e escorra",
+     "detalhe": "Abra a lata e escorra o óleo na pia segurando com a tampa.",
+     "acao": "abrir_lata",
+     "ingredientes": [
+      "sardinha"
+     ]
+    },
+    {
+     "titulo": "Amasse com espinha",
+     "detalhe": "Numa tigela, amasse com garfo; a espinha é mole e vai junto: é cálcio.",
+     "acao": "amassar",
+     "ingredientes": [
+      "sardinha"
+     ]
+    },
+    {
+     "titulo": "Cremosa",
+     "detalhe": "Misture 1 col. sopa de requeijão light, gotas de limão e pimenta.",
+     "acao": "misturar",
+     "ingredientes": [
+      "requeijao",
+      "limao"
+     ]
+    },
+    {
+     "titulo": "Monte",
+     "detalhe": "Numa fatia de pão, a sardinha; por cima 2 col. sopa de cenoura e de repolho ralados e 1 ovo cozido em rodelas. Feche.",
+     "acao": "montar",
+     "ingredientes": [
+      "pao",
+      "cenoura",
+      "repolho",
+      "ovo"
+     ]
+    },
+    {
+     "titulo": "Para a rua",
+     "detalhe": "Monte em casa, embrulhe em papel alumínio e leve na bolsa térmica com gelo.",
+     "acao": "embrulhar",
+     "ingredientes": [],
+     "momento": "servir"
+    }
+   ]
+  },
+  {
+   "id": "R10",
+   "nome": "Sorvete de banana (doce A)",
+   "porcoes": "lanche",
+   "so": [
+    "A"
+   ],
+   "passos": [
+    {
+     "titulo": "Congele as bananas",
+     "detalhe": "Véspera: descasque {banana:cru} bem maduras (com pintinhas), rodelas de 1 cm, sobre papel manteiga numa assadeira, freezer por pelo menos 2 h.",
+     "acao": "congelar",
+     "ingredientes": [
+      "banana"
+     ],
+     "momento": "vespera"
+    },
+    {
+     "titulo": "Bata em 2 levas",
+     "detalhe": "Cada leva: metade das bananas + metade de {whey} + metade de {leite} + metade de {linhaca} + metade de {girassol}.",
+     "acao": "liquidificador",
+     "ingredientes": [
+      "banana",
+      "whey",
+      "linhaca",
+      "girassol"
+     ]
+    },
+    {
+     "titulo": "Até virar creme",
+     "detalhe": "Pulse e raspe as laterais 2–3 min. Travou? Leite de 1 em 1 col. sopa.",
+     "acao": "liquidificador",
+     "ingredientes": [],
+     "segundos": 150
+    },
+    {
+     "titulo": "Potinhos no freezer",
+     "detalhe": "Divida em {porcoes} potinhos, tampe e congele. Para comer, tire 10–15 min antes.",
+     "acao": "congelar",
+     "ingredientes": [
+      "congelar"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "R11",
+   "nome": "Creme de ricota (doce B)",
+   "porcoes": "lanche",
+   "so": [
+    "B"
+   ],
+   "passos": [
+    {
+     "titulo": "Tudo no liquidificador",
+     "detalhe": "{ricota}, {whey}, {doceleite}, {banana}, {leite}, {linhaca}, {girassol} e 1 col. chá de canela.",
+     "acao": "liquidificador",
+     "ingredientes": [
+      "ricota",
+      "whey",
+      "doceleite",
+      "canela"
+     ]
+    },
+    {
+     "titulo": "Bata até ficar liso",
+     "detalhe": "1–2 min, raspando as laterais.",
+     "acao": "liquidificador",
+     "ingredientes": [],
+     "segundos": 90
+    },
+    {
+     "titulo": "Potinhos no freezer",
+     "detalhe": "Divida em {porcoes} potinhos e congele. Na véspera, para a geladeira: vira mousse gelado.",
+     "acao": "congelar",
+     "ingredientes": [
+      "congelar"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "R12",
+   "nome": "Mingau de aveia (doce C)",
+   "porcoes": "lanche",
+   "so": [
+    "C"
+   ],
+   "passos": [
+    {
+     "titulo": "Saquinhos secos",
+     "detalhe": "No dia do preparo: {porcoes} saquinhos com 2½ col. sopa de aveia, 1 col. sopa de linhaça e 1 col. sopa de girassol.",
+     "acao": "montar",
+     "ingredientes": [
+      "aveia",
+      "linhaca",
+      "girassol"
+     ]
+    },
+    {
+     "titulo": "Micro-ondas 1+1 min",
+     "detalhe": "À noite, tigela grande (o mingau sobe): ¾ copo de leite + ¼ copo de água + 1 saquinho. 1 min, mexa, mais 1 min.",
+     "acao": "microondas",
+     "ingredientes": [
+      "leite",
+      "aveia"
+     ],
+     "segundos": 120,
+     "momento": "na_hora"
+    },
+    {
+     "titulo": "Whey fora do fogo",
+     "detalhe": "Espere 1 min e misture 1½ dosador de whey (sem ferver, senão empelota), ½ banana em rodelas e canela.",
+     "acao": "misturar",
+     "ingredientes": [
+      "whey",
+      "banana",
+      "canela"
+     ],
+     "segundos": 60,
+     "momento": "na_hora"
+    }
+   ]
+  },
+  {
+   "id": "R13",
+   "nome": "Vitamina e banana na mussarela (B)",
+   "porcoes": "cafe",
+   "so": [
+    "B"
+   ],
+   "passos": [
+    {
+     "titulo": "Kits da vitamina",
+     "detalhe": "No dia do preparo: {porcoes} saquinhos com 3 col. sopa de aveia + 1 col. sopa de linhaça; congele {porcoes} bananas em rodelas, uma por saquinho.",
+     "acao": "montar",
+     "ingredientes": [
+      "aveia",
+      "linhaca",
+      "banana"
+     ]
+    },
+    {
+     "titulo": "Bata 40 s",
+     "detalhe": "De manhã: 250 ml de leite gelado, 2 dosadores de whey, 1 saquinho de aveia e 1 de banana. Rua: garrafa térmica com 2 cubos de gelo, tome em até 2 h.",
+     "acao": "liquidificador",
+     "ingredientes": [
+      "leite",
+      "whey"
+     ],
+     "segundos": 40,
+     "momento": "na_hora"
+    },
+    {
+     "titulo": "Queijo na frigideira",
+     "detalhe": "Pré-treino: frigideira antiaderente, fogo médio, sem óleo. 2 fatias de mussarela lado a lado (sobrepondo 1 cm), ~1 min até derreter e dourar as bordas.",
+     "acao": "frigideira",
+     "ingredientes": [
+      "muss"
+     ],
+     "segundos": 60,
+     "momento": "na_hora"
+    },
+    {
+     "titulo": "Banana e dobra",
+     "detalhe": "1 banana em rodelas no centro, canela, dobre como pastel, mais 30 s. No prato, 1 col. sopa de aveia por cima.",
+     "acao": "frigideira",
+     "ingredientes": [
+      "banana",
+      "canela"
+     ],
+     "segundos": 30,
+     "momento": "na_hora"
+    }
+   ]
+  },
+  {
+   "id": "R14",
+   "nome": "Salada de repolho (opcional, 5 dias)",
+   "porcoes": null,
+   "passos": [
+    {
+     "titulo": "Fatie fino",
+     "detalhe": "¼ de repolho bem fino com faca afiada (ou lado grosso do ralador). Rale 2 cenouras.",
+     "acao": "ralar",
+     "ingredientes": [
+      "repolho",
+      "cenoura"
+     ]
+    },
+    {
+     "titulo": "Tempere no pote",
+     "detalhe": "Pote grande: repolho, cenoura, suco de 2 limões, 1 col. sopa de óleo, ½ col. chá de sal. Tampe e sacuda.",
+     "acao": "misturar",
+     "ingredientes": [
+      "limao"
+     ]
+    },
+    {
+     "titulo": "Geladeira",
+     "detalhe": "Sirva 3–4 col. sopa ao lado da marmita ou dentro do sanduíche.",
+     "acao": "geladeira",
+     "ingredientes": []
+    }
+   ]
+  }
+ ],
+ "roteiros": {
+  "A": {
+   "tempo": "~1h20",
+   "vespera": [
+    "Passe {frango:cru} para a geladeira (+0,4 kg se for repor 2 coringas)",
+    "Congele {banana@lanche:cru} maduras em rodelas (R10 passo 1)"
+   ],
+   "etapas": [
+    {
+     "minuto": 0,
+     "tarefa": "Separe potes, potinhos, papel manteiga, filme e etiquetas; R0 se acabou",
+     "receita": "R0"
+    },
+    {
+     "minuto": 5,
+     "tarefa": "Marine o frango",
+     "receita": "R1",
+     "passos": [
+      1,
+      3
+     ]
+    },
+    {
+     "minuto": 10,
+     "tarefa": "Abóbora e batata no fogo (panela 2)",
+     "receita": "R4",
+     "passos": [
+      1,
+      4
+     ]
+    },
+    {
+     "minuto": 25,
+     "tarefa": "Frango na panela elétrica (trabalha sozinha ~25 min)",
+     "receita": "R1",
+     "passos": [
+      4,
+      7
+     ]
+    },
+    {
+     "minuto": 30,
+     "tarefa": "Panela 1: carne com seleta, aveia e couve",
+     "receita": "R2"
+    },
+    {
+     "minuto": 45,
+     "tarefa": "Termine o purê com leite",
+     "receita": "R4",
+     "passos": [
+      5,
+      7
+     ]
+    },
+    {
+     "minuto": 50,
+     "tarefa": "Monte os escondidinhos",
+     "receita": "R5"
+    },
+    {
+     "minuto": 60,
+     "tarefa": "Desfie o frango e rale a cenoura",
+     "receita": "R1",
+     "passos": [
+      8,
+      10
+     ]
+    },
+    {
+     "minuto": 70,
+     "tarefa": "Monte os lanches (+ coringas)",
+     "receita": "R6"
+    },
+    {
+     "minuto": 80,
+     "tarefa": "Sorvete; tudo para o freezer",
+     "receita": "R10",
+     "passos": [
+      2,
+      4
+     ]
+    }
+   ]
+  },
+  "B": {
+   "tempo": "~1h45 (≈1 h de mão na massa)",
+   "vespera": [
+    "Passe {frango:cru} para a geladeira (+0,4 kg se for repor 2 coringas)",
+    "Congele {banana@cafe:cru} em rodelas, uma por saquinho (R13)"
+   ],
+   "etapas": [
+    {
+     "minuto": 0,
+     "tarefa": "Separe potes, potinhos, papéis, saquinhos zip e etiquetas; R0 se precisar",
+     "receita": "R0"
+    },
+    {
+     "minuto": 5,
+     "tarefa": "Marine o frango em 2 tigelas (uma por leva)",
+     "receita": "R1",
+     "passos": [
+      1,
+      3
+     ]
+    },
+    {
+     "minuto": 10,
+     "tarefa": "Batata-doce e abóbora no fogo (panela 2)",
+     "receita": "R4",
+     "passos": [
+      1,
+      4
+     ]
+    },
+    {
+     "minuto": 25,
+     "tarefa": "Leva 1 na panela elétrica",
+     "receita": "R1",
+     "passos": [
+      4,
+      7
+     ]
+    },
+    {
+     "minuto": 30,
+     "tarefa": "Saquinhos de aveia e linhaça da vitamina",
+     "receita": "R13",
+     "passos": [
+      1,
+      1
+     ]
+    },
+    {
+     "minuto": 40,
+     "tarefa": "Termine o purê com requeijão",
+     "receita": "R4",
+     "passos": [
+      5,
+      7
+     ]
+    },
+    {
+     "minuto": 50,
+     "tarefa": "Desfie a leva 1; leva 2 na panela elétrica",
+     "receita": "R1",
+     "passos": [
+      8,
+      10
+     ]
+    },
+    {
+     "minuto": 75,
+     "tarefa": "Desfie a leva 2; separe o frango do almoço e dos lanches",
+     "receita": "R1",
+     "passos": [
+      8,
+      10
+     ]
+    },
+    {
+     "minuto": 80,
+     "tarefa": "Panela 1: frango com seleta, espinafre e tomate",
+     "receita": "R3"
+    },
+    {
+     "minuto": 95,
+     "tarefa": "Monte escondidinhos e lanches cremosos",
+     "receita": "R5"
+    },
+    {
+     "minuto": 105,
+     "tarefa": "Creme de ricota; tudo para o freezer",
+     "receita": "R11"
+    }
+   ]
+  },
+  "C": {
+   "tempo": "~1h",
+   "vespera": [
+    "Nada: a carne pode ser comprada no dia"
+   ],
+   "etapas": [
+    {
+     "minuto": 0,
+     "tarefa": "Separe potes, saquinhos zip e etiquetas; R0 se precisar",
+     "receita": "R0"
+    },
+    {
+     "minuto": 5,
+     "tarefa": "Batata no fogo (panela 2) e água para os ovos na panela média",
+     "receita": "R4",
+     "passos": [
+      2,
+      4
+     ]
+    },
+    {
+     "minuto": 15,
+     "tarefa": "Panela 1: carne com seleta, espinafre, tomate e aveia",
+     "receita": "R2"
+    },
+    {
+     "minuto": 20,
+     "tarefa": "Ovos cozidos 10 min + choque frio",
+     "receita": "R7",
+     "passos": [
+      5,
+      7
+     ]
+    },
+    {
+     "minuto": 35,
+     "tarefa": "Termine o purê com leite",
+     "receita": "R4",
+     "passos": [
+      5,
+      7
+     ]
+    },
+    {
+     "minuto": 40,
+     "tarefa": "Monte os escondidinhos",
+     "receita": "R5"
+    },
+    {
+     "minuto": 50,
+     "tarefa": "Saquinhos de flocão e do mingau; ovos com casca na geladeira",
+     "receita": "R8",
+     "passos": [
+      1,
+      1
+     ]
+    },
+    {
+     "minuto": 55,
+     "tarefa": "Opcional: salada de repolho (separe repolho e cenoura para os sanduíches)",
+     "receita": "R14"
+    }
+   ]
+  }
+ },
+ "trocas": {
+  "grupos": {
+   "proteina": [
+    "musculo",
+    "patinho",
+    "frango",
+    "sardinha",
+    "ovo"
+   ],
+   "carbo_pure": [
+    "batata",
+    "abobora",
+    "bdoce",
+    "mandioca"
+   ],
+   "carbo_cafe": [
+    "pao",
+    "flocao",
+    "aveia"
+   ],
+   "carbo_extra": [
+    "arroz",
+    "macarrao_int"
+   ],
+   "fruta": [
+    "banana",
+    "laranja",
+    "maca",
+    "mamao",
+    "manga",
+    "morango"
+   ],
+   "verde": [
+    "couve",
+    "espinafre",
+    "brocolis",
+    "repolho"
+   ],
+   "legume": [
+    "seleta",
+    "ervilha",
+    "cenoura",
+    "abobrinha",
+    "beterraba",
+    "tomate"
+   ],
+   "laticinio_cremoso": [
+    "requeijao",
+    "ricota",
+    "iogurte"
+   ],
+   "queijo": [
+    "muss",
+    "minas"
+   ],
+   "semente": [
+    "linhaca",
+    "girassol"
+   ]
+  },
+  "proibidos": [
+   "figado",
+   "feijao",
+   "chocolate à noite",
+   "soja (proteína)"
+  ]
+ },
+ "coringas": [
+  {
+   "id": "lanche_extra",
+   "nome": "Lanche de frango extra (freezer)",
+   "kcal": 430,
+   "P": 45,
+   "custo": 4.5,
+   "obs": "mesmo do jantar A; airfryer ou micro-ondas"
+  },
+  {
+   "id": "salada_macarrao",
+   "nome": "Salada de macarrão com frango, azeitona e passas",
+   "kcal": 520,
+   "P": 35,
+   "custo": 5.5,
+   "obs": "geladeira até 4 dias; não congela"
+  },
+  {
+   "id": "sardinha_rua",
+   "nome": "Sanduíche de sardinha (R9) na bolsa térmica",
+   "kcal": 400,
+   "P": 30,
+   "custo": 7,
+   "obs": "até 4 h na bolsa com gelo"
+  }
+ ],
+ "extrasSemana": [
+  {
+   "descricao": "Alho, limão e cheiro-verde",
+   "quantidade": "1 cabeça, 4 limões, 1 maço",
+   "preco": 7,
+   "loja": "hortifruti"
+  }
+ ],
+ "primeiraCompra": [
+  {
+   "descricao": "Sal",
+   "quantidade": "1 kg",
+   "preco": 3
+  },
+  {
+   "descricao": "Pimenta-do-reino moída",
+   "quantidade": "1 pote",
+   "preco": 5
+  },
+  {
+   "descricao": "Páprica defumada",
+   "quantidade": "1 pote",
+   "preco": 6
+  },
+  {
+   "descricao": "Cominho em pó",
+   "quantidade": "1 pote",
+   "preco": 5
+  },
+  {
+   "descricao": "Orégano",
+   "quantidade": "1 pote",
+   "preco": 4
+  },
+  {
+   "descricao": "Colorau",
+   "quantidade": "1 pote",
+   "preco": 3
+  },
+  {
+   "descricao": "Louro em folha",
+   "quantidade": "1 pacote",
+   "preco": 3
+  },
+  {
+   "descricao": "Canela em pó",
+   "quantidade": "1 pote",
+   "preco": 5
+  },
+  {
+   "descricao": "Óleo de soja",
+   "quantidade": "900 ml",
+   "preco": 8
+  },
+  {
+   "descricao": "Potes 750 ml com tampa (micro-ondas e freezer)",
+   "quantidade": "7",
+   "preco": 30
+  },
+  {
+   "descricao": "Potinhos 250 ml com tampa (doces)",
+   "quantidade": "7",
+   "preco": 20
+  },
+  {
+   "descricao": "Papel manteiga",
+   "quantidade": "1 rolo",
+   "preco": 8
+  },
+  {
+   "descricao": "Filme PVC (só freezer, nunca na airfryer)",
+   "quantidade": "1 rolo",
+   "preco": 8
+  },
+  {
+   "descricao": "Saquinhos zip para freezer",
+   "quantidade": "1 pacote",
+   "preco": 10
+  },
+  {
+   "descricao": "Bolsa térmica + 2 gelos reutilizáveis",
+   "quantidade": "1 kit",
+   "preco": 40
+  }
+ ],
+ "seguranca": [
+  "Esfriar destampado até 30 min, depois tampar e congelar; nada mais de 2 h fora da geladeira",
+  "Descongelar sempre na geladeira (véspera)",
+  "Reaquecer até sair vapor por igual",
+  "Filme PVC só no freezer; tirar antes da airfryer (papel manteiga pode ir)",
+  "Não lavar frango cru",
+  "Salada de macarrão com maionese não congela"
+ ]
+}
