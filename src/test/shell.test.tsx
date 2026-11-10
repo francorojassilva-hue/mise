@@ -51,7 +51,7 @@ describe("casca do app", () => {
   it("troca a letra pelo painel Semana e aplica o tema no html", async () => {
     montar();
     fireEvent.click(screen.getByRole("button", { name: "Semana A" }));
-    fireEvent.click(await screen.findByRole("button", { name: "B" }));
+    fireEvent.click(await screen.findByRole("button", { name: "Letra B" }));
     expect(document.documentElement.dataset["theme"]).toBe("B");
   });
 });

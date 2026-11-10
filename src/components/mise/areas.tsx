@@ -1,8 +1,6 @@
 import { motion } from "framer-motion";
 import { CalendarDays, ChefHat, Settings, ShoppingBasket, type LucideIcon } from "lucide-react";
-import { MiseButton } from "./MiseButton";
-import { setLetra, useSemana } from "@/lib/semana";
-import type { Letra } from "@/lib/appearance";
+import { Semana } from "./Semana";
 import { cn } from "@/lib/utils";
 
 export type AreaId = "cozinhar" | "mercado" | "semana" | "ajustes";
@@ -24,29 +22,13 @@ export function AreaIcon({ id, className = "size-12" }: { id: AreaId; className?
   );
 }
 
-const LETRAS: Letra[] = ["A", "B", "C"];
-
-/** Corpo provisório: Semana, Mercado e Preparo chegam nos próximos commits da F3; Ajustes na F4. */
-function Corpo({ id }: { id: AreaId }) {
-  const { letra } = useSemana();
-  if (id === "semana") {
-    return (
-      <div className="space-y-3">
-        <p className="text-sm font-bold">Letra da semana</p>
-        <div className="grid grid-cols-3 gap-2">
-          {LETRAS.map((l) => (
-            <MiseButton key={l} onClick={() => setLetra(l)} aria-pressed={l === letra} className={cn("min-h-14 rounded-2xl text-xl font-black", l === letra ? "btn-vivid" : "glass-strong")}>
-              {l}
-            </MiseButton>
-          ))}
-        </div>
-      </div>
-    );
-  }
+/** Corpo de cada aba. Mercado e Preparo chegam nos próximos commits da F3; Ajustes na F4. */
+function Corpo({ id, open }: { id: AreaId; open?: ((a: AreaId | null) => void) | undefined }) {
+  if (id === "semana") return <Semana onMercado={() => open?.("mercado")} />;
   return <div className="glass grid h-40 place-items-center p-5 text-center font-semibold text-muted-foreground">Em construção</div>;
 }
 
-export function AreaPanel({ id }: { id: AreaId; open?: (a: AreaId | null) => void }) {
+export function AreaPanel({ id, open }: { id: AreaId; open?: (a: AreaId | null) => void }) {
   const area = AREAS[id];
   return (
     <div className="space-y-5">
@@ -57,7 +39,7 @@ export function AreaPanel({ id }: { id: AreaId; open?: (a: AreaId | null) => voi
           <p className="text-sm text-muted-foreground">{area.hint}</p>
         </div>
       </div>
-      <Corpo id={id} />
+      <Corpo id={id} open={open} />
     </div>
   );
 }

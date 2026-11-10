@@ -9,6 +9,7 @@ import { Hoje } from "@/components/mise/Hoje";
 import { Drawer, DrawerContent, DrawerDescription, DrawerTitle } from "@/components/ui/drawer";
 import { carregarCuriosidades } from "@/lib/curiosidades";
 import { carregarDieta } from "@/lib/dietaAtual";
+import { carregarPrecos } from "@/lib/precos";
 import { carregarSemana, useSemana, verificarVirada } from "@/lib/semana";
 import { useTheme } from "@/lib/theme";
 
@@ -25,6 +26,7 @@ export function App() {
     void carregarDieta();
     void carregarSemana();
     void carregarCuriosidades();
+    void carregarPrecos();
     const aoVoltar = () => document.visibilityState === "visible" && verificarVirada();
     document.addEventListener("visibilitychange", aoVoltar);
     return () => document.removeEventListener("visibilitychange", aoVoltar);
