@@ -118,3 +118,17 @@ export function Ring({ value, max, size = 120, stroke = 12, color, children }: {
     </div>
   );
 }
+
+/** Avisos de capacidade (freezer, bocas...) em faixas amarelas. */
+export function Avisos({ itens }: { itens: string[] }) {
+  if (!itens.length) return null;
+  return (
+    <div className="space-y-1.5">
+      {itens.map((t) => (
+        <p key={t} className="rounded-2xl bg-warning/20 px-3 py-2 text-sm font-semibold">
+          ⚠️ {t}
+        </p>
+      ))}
+    </div>
+  );
+}
