@@ -2,6 +2,7 @@ import { useRef, useState } from "react";
 import { Download, Upload } from "lucide-react";
 import { toast } from "sonner";
 import { MiseButton } from "./MiseButton";
+import { lerTexto } from "@/lib/utils";
 import { backupEmTexto, montarBackup, nomeDoBackup, nomeDoItem, restaurarBackup } from "@/lib/backup";
 
 /** Entrega o arquivo pelo Compartilhar do sistema; sem ele, baixa. */
@@ -54,7 +55,7 @@ export function SecaoBackup() {
             const f = e.target.files?.[0];
             e.target.value = "";
             if (!f) return;
-            const r = await restaurarBackup(await f.text());
+            const r = await restaurarBackup(await lerTexto(f));
             if (r.ok) {
               setAviso(`Restaurado: ${r.itens.map(nomeDoItem).join(", ")}.`);
               toast.success("Backup restaurado");

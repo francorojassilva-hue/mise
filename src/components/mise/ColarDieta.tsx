@@ -6,7 +6,7 @@ import type { Dieta } from "@/lib/dieta";
 import { salvarDieta } from "@/lib/dietaAtual";
 import { COLAGEM_VAZIA, concluirColagem, receberParte, resumoDieta, type Colagem, type Resultado } from "@/lib/importar";
 import { zerarSemana } from "@/lib/semana";
-import { cn } from "@/lib/utils";
+import { cn, lerTexto } from "@/lib/utils";
 
 type Situacao = { tom: "ok" | "espera" | "erro"; texto: string };
 
@@ -104,7 +104,7 @@ export function ColarDieta({ rotuloFinal, onConcluir }: { rotuloFinal: string; o
             onChange={async (e) => {
               const f = e.target.files?.[0];
               e.target.value = "";
-              if (f) conferir(await f.text());
+              if (f) conferir(await lerTexto(f));
             }}
           />
         </>

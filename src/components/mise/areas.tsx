@@ -30,7 +30,7 @@ function Corpo({ id, open }: { id: AreaId; open?: ((a: AreaId | null) => void) |
   if (id === "semana") return <Semana onMercado={() => open?.("mercado")} />;
   if (id === "mercado") return <Mercado />;
   if (id === "cozinhar") return <Preparo />;
-  return <AjustesBody />;
+  return <AjustesBody aoCriarDieta={() => open?.(null)} />;
 }
 
 export function AreaPanel({ id, open }: { id: AreaId; open?: (a: AreaId | null) => void }) {

@@ -9,6 +9,7 @@ import type { Dieta } from "@/lib/dieta";
 import { atualizarDieta, useDieta, voltarAoExemplo } from "@/lib/dietaAtual";
 import { alternarTipo, useAjustes } from "@/lib/ajustes";
 import { exportarDieta } from "@/lib/importar";
+import { reabrirOnboarding } from "@/lib/onboarding";
 import { TIPOS, type Tipo } from "@/lib/lembretes";
 import { ATIVIDADE, DIAS, kcalMeta, perfilDe } from "@/lib/porcoes";
 import { copiarTexto } from "@/lib/promptIA";
@@ -217,7 +218,7 @@ function Lembretes() {
   );
 }
 
-function SuaDieta({ exemplo, d }: { exemplo: boolean; d: Dieta }) {
+function SuaDieta({ exemplo, d, aoCriarDieta }: { exemplo: boolean; d: Dieta; aoCriarDieta: () => void }) {
   const [subir, setSubir] = useState(false);
   const [confirma, setConfirma] = useState(false);
   const texto = () => exportarDieta(d);
@@ -246,7 +247,16 @@ function SuaDieta({ exemplo, d }: { exemplo: boolean; d: Dieta }) {
             <Share2 className="size-4" /> Compartilhar
           </MiseButton>
         </div>
-        <MiseButton onClick={() => setSubir((v) => !v)} aria-expanded={subir} className="btn-vivid w-full font-bold">
+        <MiseButton
+          onClick={() => {
+            reabrirOnboarding();
+            aoCriarDieta();
+          }}
+          className="btn-vivid w-full font-bold"
+        >
+          Criar dieta nova com IA
+        </MiseButton>
+        <MiseButton onClick={() => setSubir((v) => !v)} aria-expanded={subir} className="glass w-full font-bold">
           {subir ? "Fechar" : "Subir nova dieta"}
         </MiseButton>
         {subir && <ColarDieta rotuloFinal="Usar esta dieta" onConcluir={() => setSubir(false)} />}
@@ -277,7 +287,7 @@ function SuaDieta({ exemplo, d }: { exemplo: boolean; d: Dieta }) {
   );
 }
 
-export function AjustesBody() {
+export function AjustesBody({ aoCriarDieta }: { aoCriarDieta: () => void }) {
   const { dieta: d, exemplo } = useDieta();
   return (
     <div className="space-y-5 pb-6">
@@ -287,7 +297,7 @@ export function AjustesBody() {
       <PessoaExtra d={d} />
       <Preparo d={d} />
       <Lembretes />
-      <SuaDieta exemplo={exemplo} d={d} />
+      <SuaDieta exemplo={exemplo} d={d} aoCriarDieta={aoCriarDieta} />
       <SecaoBackup />
     </div>
   );
